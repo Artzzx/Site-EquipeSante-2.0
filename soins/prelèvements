@@ -1,0 +1,1525 @@
+<!-- Équipe Santé+ - Service Detail: Prélèvements à Domicile -->
+<div class="esp-service-detail">
+  
+  <!-- Hero Section -->
+  <section class="esp-hero" itemscope itemtype="https://schema.org/MedicalProcedure">
+    <div class="esp-hero-content">
+      <div class="esp-hero-badge">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M6.5 10L9 12.5L13.5 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Service professionnel certifié
+      </div>
+      <h1 itemprop="name">Prélèvements à Domicile</h1>
+      <p class="esp-hero-subtitle" itemprop="description">Des prises de sang et prélèvements sécuritaires, effectués par des infirmières qualifiées, dans le confort de votre foyer ou bureau sur la Rive-Sud.</p>
+      <div class="esp-hero-features">
+        <div class="esp-feature-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <span>Résultats en 24-48h</span>
+        </div>
+        <div class="esp-feature-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Sans douleur</span>
+        </div>
+        <div class="esp-feature-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 12V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Normes d'hygiène strictes</span>
+        </div>
+      </div>
+      <div class="esp-hero-cta">
+        <a href="https://equipesanteplus.ca/contact/" class="esp-btn-primary">
+          <span>Prendre rendez-vous</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 4L14 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="tel:+14505551234" class="esp-btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 14V17C18 17.5523 17.5523 18 17 18C8.71573 18 2 11.2843 2 3C2 2.44772 2.44772 2 3 2H6C6.55228 2 7 2.44772 7 3C7 4.25 7.2 5.45 7.57 6.57C7.66 6.85 7.59 7.16 7.38 7.38L5.5 9.25C6.93 12.11 9.39 14.57 12.25 16L14.12 14.12C14.34 13.91 14.65 13.84 14.93 13.93C16.05 14.3 17.25 14.5 18.5 14.5C19.0523 14.5 19.5 14.9477 19.5 15.5V17C19.5 17.5523 19.0523 18 18.5 18H18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Appeler maintenant</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Overview -->
+  <section class="esp-overview">
+    <div class="esp-container">
+      <div class="esp-overview-grid">
+        <div class="esp-overview-content">
+          <h2>Un service de prélèvements professionnel et pratique</h2>
+          <p>Nous comprenons que se déplacer pour une prise de sang peut être difficile, surtout pour les personnes âgées, les personnes à mobilité réduite ou celles ayant un horaire chargé. C'est pourquoi nous nous déplaçons là où vous êtes le plus à l'aise.</p>
+          <p>Nos infirmières diplômées utilisent des techniques éprouvées pour assurer votre confort et la qualité de vos échantillons. Tous les prélèvements sont effectués dans le strict respect des normes d'hygiène et de transport des échantillons établies par l'Ordre des infirmières et infirmiers du Québec (OIIQ).</p>
+          <div class="esp-highlight-box">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 8V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="14" cy="19" r="1" fill="currentColor"/>
+            </svg>
+            <p><strong>Important :</strong> Une ordonnance médicale est requise pour tous les prélèvements. Assurez-vous de l'avoir en main lors de la prise de rendez-vous.</p>
+          </div>
+        </div>
+        <div class="esp-overview-stats">
+          <div class="esp-stat-card">
+            <div class="esp-stat-number">24-48h</div>
+            <div class="esp-stat-label">Délai pour les résultats</div>
+          </div>
+          <div class="esp-stat-card">
+            <div class="esp-stat-number">100%</div>
+            <div class="esp-stat-label">Infirmières certifiées</div>
+          </div>
+          <div class="esp-stat-card">
+            <div class="esp-stat-number">90$+</div>
+            <div class="esp-stat-label">À partir de</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Types de prélèvements -->
+  <section class="esp-types">
+    <div class="esp-container">
+      <div class="esp-section-header">
+        <h2>Types de prélèvements offerts</h2>
+        <p>Nous effectuons une gamme complète de prélèvements selon votre prescription médicale</p>
+      </div>
+      <div class="esp-types-grid">
+        <div class="esp-type-card">
+          <div class="esp-type-icon">🩸</div>
+          <h3>Prise de sang</h3>
+          <ul>
+            <li>Formule sanguine complète (FSC)</li>
+            <li>Bilan lipidique (cholestérol)</li>
+            <li>Glycémie à jeun</li>
+            <li>Fonction rénale et hépatique</li>
+            <li>Dosage hormonal (TSH, etc.)</li>
+          </ul>
+        </div>
+        <div class="esp-type-card">
+          <div class="esp-type-icon">🧪</div>
+          <h3>Culture d'urine</h3>
+          <ul>
+            <li>Dépistage d'infection urinaire</li>
+            <li>Analyse bactériologique</li>
+            <li>Culture et antibiogramme</li>
+            <li>Examen cytobactériologique (ECBU)</li>
+          </ul>
+        </div>
+        <div class="esp-type-card">
+          <div class="esp-type-icon">🔬</div>
+          <h3>Autres prélèvements</h3>
+          <ul>
+            <li>Culture de selles (coproculture)</li>
+            <li>Prélèvement de gorge</li>
+            <li>Prélèvement vaginal</li>
+            <li>Test de grossesse sanguin</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comment ça fonctionne -->
+  <section class="esp-process">
+    <div class="esp-container">
+      <div class="esp-section-header">
+        <h2>Comment ça fonctionne</h2>
+        <p>Un processus simple en 4 étapes pour votre tranquillité d'esprit</p>
+      </div>
+      <div class="esp-process-steps">
+        <div class="esp-step">
+          <div class="esp-step-number">1</div>
+          <div class="esp-step-content">
+            <h3>Contactez-nous</h3>
+            <p>Envoyez-nous votre ordonnance par courriel ou appelez-nous. Nous confirmerons le type de prélèvement et vous donnerons un prix exact.</p>
+          </div>
+        </div>
+        <div class="esp-step">
+          <div class="esp-step-number">2</div>
+          <div class="esp-step-content">
+            <h3>Planification</h3>
+            <p>Nous fixons un rendez-vous selon votre disponibilité. Nos infirmières se déplacent à domicile, au bureau ou à l'endroit de votre choix.</p>
+          </div>
+        </div>
+        <div class="esp-step">
+          <div class="esp-step-number">3</div>
+          <div class="esp-step-content">
+            <h3>Prélèvement</h3>
+            <p>L'infirmière effectue le prélèvement dans le respect des protocoles. La procédure est rapide (5-15 minutes) et effectuée avec soin.</p>
+          </div>
+        </div>
+        <div class="esp-step">
+          <div class="esp-step-number">4</div>
+          <div class="esp-step-content">
+            <h3>Résultats</h3>
+            <p>Vos échantillons sont acheminés au laboratoire le jour même. Les résultats sont disponibles en 24-48 heures via votre portail patient.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi nous choisir -->
+  <section class="esp-benefits">
+    <div class="esp-container">
+      <div class="esp-section-header">
+        <h2>Pourquoi choisir Équipe Santé+</h2>
+        <p>Des avantages qui font toute la différence pour votre expérience</p>
+      </div>
+      <div class="esp-benefits-grid">
+        <div class="esp-benefit-card">
+          <div class="esp-benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M11 16L15 20L21 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Confort optimal</h3>
+          <p>Restez dans votre environnement familier, sans stress de déplacement ou d'attente en clinique.</p>
+        </div>
+        <div class="esp-benefit-card">
+          <div class="esp-benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 8V16L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Gain de temps</h3>
+          <p>Plus besoin de vous déplacer, de stationner ou d'attendre. Nous nous adaptons à votre horaire.</p>
+        </div>
+        <div class="esp-benefit-card">
+          <div class="esp-benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 4L20 12L28 14L22 20L24 28L16 24L8 28L10 20L4 14L12 12L16 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Expertise reconnue</h3>
+          <p>Infirmières membres de l'OIIQ avec formation spécialisée en prélèvements sanguins.</p>
+        </div>
+        <div class="esp-benefit-card">
+          <div class="esp-benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="8" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 8V6C10 4.89543 10.8954 4 12 4H20C21.1046 4 22 4.89543 22 6V8" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 14V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Matériel stérile</h3>
+          <p>Équipement médical neuf et jetable pour chaque patient. Sécurité et hygiène garanties.</p>
+        </div>
+        <div class="esp-benefit-card">
+          <div class="esp-benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 2C10.4772 2 6 6.47715 6 12C6 17.5228 16 30 16 30C16 30 26 17.5228 26 12C26 6.47715 21.5228 2 16 2Z" stroke="currentColor" stroke-width="2"/>
+              <circle cx="16" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Service local</h3>
+          <p>Couverture complète de la Rive-Sud: Longueuil, Brossard, Saint-Hubert, Boucherville et plus.</p>
+        </div>
+        <div class="esp-benefit-card">
+          <div class="esp-benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28 16C28 22.6274 22.6274 28 16 28M28 16C28 9.37258 22.6274 4 16 4M28 16H4M16 28C9.37258 28 4 22.6274 4 16M16 28C19.3137 28 22 22.6274 22 16C22 9.37258 19.3137 4 16 4M16 28C12.6863 28 10 22.6274 10 16C10 9.37258 12.6863 4 16 4M4 16C4 9.37258 9.37258 4 16 4" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Transport sécurisé</h3>
+          <p>Vos échantillons sont acheminés au laboratoire dans les délais et conditions optimales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Préparation -->
+  <section class="esp-preparation">
+    <div class="esp-container">
+      <div class="esp-prep-content">
+        <div class="esp-prep-text">
+          <h2>Comment se préparer</h2>
+          <p>Quelques consignes simples pour assurer la réussite de votre prélèvement</p>
+          <div class="esp-prep-list">
+            <div class="esp-prep-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <strong>Ordonnance médicale</strong>
+                <p>Assurez-vous d'avoir votre prescription en main</p>
+              </div>
+            </div>
+            <div class="esp-prep-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <strong>Jeûne si nécessaire</strong>
+                <p>Certaines analyses requièrent un jeûne de 8-12 heures (nous vous informerons)</p>
+              </div>
+            </div>
+            <div class="esp-prep-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <strong>Hydratation</strong>
+                <p>Buvez beaucoup d'eau la veille pour faciliter le prélèvement</p>
+              </div>
+            </div>
+            <div class="esp-prep-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <strong>Carte d'assurance maladie</strong>
+                <p>Ayez votre carte RAMQ à portée de main</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="esp-prep-image">
+          <div class="esp-prep-card">
+            <div class="esp-prep-card-icon">💡</div>
+            <h4>Conseil de pro</h4>
+            <p>Portez des vêtements avec des manches amples pour faciliter l'accès à votre bras. Prévoyez aussi un petit en-cas après le prélèvement si vous êtes à jeun.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tarification -->
+  <section class="esp-pricing">
+    <div class="esp-container">
+      <div class="esp-section-header">
+        <h2>Tarification transparente</h2>
+        <p>Des prix justes pour un service de qualité supérieure</p>
+      </div>
+      <div class="esp-pricing-card">
+        <div class="esp-pricing-header">
+          <div class="esp-pricing-icon">💰</div>
+          <h3>Prélèvements à domicile</h3>
+        </div>
+        <div class="esp-pricing-body">
+          <div class="esp-price">
+            <span class="esp-price-from">À partir de</span>
+            <span class="esp-price-amount">90$</span>
+          </div>
+          <ul class="esp-pricing-includes">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Déplacement inclus (Rive-Sud)
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Matériel stérile et jetable
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Transport au laboratoire
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Suivi professionnel
+            </li>
+          </ul>
+          <div class="esp-pricing-note">
+            <p><strong>Note :</strong> Le prix final varie selon le type et le nombre de prélèvements prescrits. Contactez-nous avec votre ordonnance pour obtenir un prix exact.</p>
+          </div>
+        </div>
+        <div class="esp-pricing-footer">
+          <a href="https://equipesanteplus.ca/contact/" class="esp-btn-pricing">
+            Obtenir un prix exact
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 4L12 9L6 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="esp-faq">
+    <div class="esp-container">
+      <div class="esp-section-header">
+        <h2>Questions fréquentes</h2>
+        <p>Tout ce que vous devez savoir sur nos services de prélèvements</p>
+      </div>
+      <div class="esp-faq-grid">
+        <div class="esp-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 itemprop="name">Ai-je besoin d'une ordonnance?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Oui, une ordonnance médicale valide est obligatoire pour tous les prélèvements. Elle doit spécifier les analyses à effectuer. Vous pouvez nous l'envoyer par courriel ou la présenter lors du rendez-vous.</p>
+          </div>
+        </div>
+        <div class="esp-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 itemprop="name">Dois-je être à jeun?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Cela dépend des analyses prescrites. Pour un bilan lipidique ou une glycémie à jeun, un jeûne de 8-12 heures est requis. Nous vous informerons des consignes spécifiques lors de la prise de rendez-vous.</p>
+          </div>
+        </div>
+        <div class="esp-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 itemprop="name">Combien de temps dure le prélèvement?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Une prise de sang standard prend environ 5 à 10 minutes. Si plusieurs tubes sont nécessaires ou pour d'autres types de prélèvements, la visite peut durer 15-20 minutes au total.</p>
+          </div>
+        </div>
+        <div class="esp-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 itemprop="name">Quand recevrai-je mes résultats?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Les résultats sont généralement disponibles en 24 à 48 heures via votre portail patient du laboratoire. Certaines analyses spécialisées peuvent prendre plus de temps (3-5 jours).</p>
+          </div>
+        </div>
+        <div class="esp-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 itemprop="name">Couvrez-vous toute la Rive-Sud?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Oui! Nous desservons Longueuil, Brossard, Saint-Hubert, Saint-Lambert, Greenfield Park, Boucherville, Saint-Bruno et les environs. Pour les secteurs plus éloignés, contactez-nous pour confirmer.</p>
+          </div>
+        </div>
+        <div class="esp-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 itemprop="name">Est-ce que ça fait mal?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Nos infirmières utilisent des techniques douces et du matériel de qualité pour minimiser l'inconfort. La plupart des patients ressentent seulement une légère piqûre. Nous prenons le temps nécessaire pour vous mettre à l'aise.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="esp-final-cta">
+    <div class="esp-container">
+      <div class="esp-final-cta-content">
+        <div class="esp-final-cta-icon">📋</div>
+        <h2>Prêt à prendre rendez-vous?</h2>
+        <p>Envoyez-nous votre ordonnance dès aujourd'hui. Nous vous recontacterons rapidement pour planifier votre prélèvement à domicile selon votre disponibilité.</p>
+        <div class="esp-final-cta-buttons">
+          <a href="mailto:infos@equipesanteplus.ca" class="esp-btn-cta-primary">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M2 6L11 12L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Envoyer mon ordonnance</span>
+          </a>
+          <a href="https://equipesanteplus.ca/contact/" class="esp-btn-cta-secondary">
+            Formulaire de contact
+          </a>
+        </div>
+        <p class="esp-final-cta-note">Réponse garantie le jour même • Service 7 jours sur 7</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="esp-related">
+    <div class="esp-container">
+      <div class="esp-section-header">
+        <h2>Autres services qui pourraient vous intéresser</h2>
+      </div>
+      <div class="esp-related-grid">
+        <a href="https://equipesanteplus.ca/soins-infirmier/suivi-db/" class="esp-related-card">
+          <div class="esp-related-icon">🩸</div>
+          <h3>Prise de Glycémie</h3>
+          <p>Surveillance du diabète à domicile</p>
+          <span class="esp-related-link">
+            En savoir plus
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+        <a href="https://equipesanteplus.ca/soins-infirmier/prise-ta/" class="esp-related-card">
+          <div class="esp-related-icon">❤️</div>
+          <h3>Prise de Tension</h3>
+          <p>Suivi cardiovasculaire professionnel</p>
+          <span class="esp-related-link">
+            En savoir plus
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+        <a href="https://equipesanteplus.ca/soins-infirmier/administration-med/" class="esp-related-card">
+          <div class="esp-related-icon">💊</div>
+          <h3>Administration de Médicaments</h3>
+          <p>Prise sécuritaire selon prescription</p>
+          <span class="esp-related-link">
+            En savoir plus
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<style>
+/* ============================================
+   ÉQUIPE SANTÉ+ - Service Detail Page
+   Prélèvements à Domicile
+   Mobile-First | Premium | Professional & Warm
+   ============================================ */
+
+/* Font Loading */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'LostaMasta';
+  src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LostaMasta';
+  src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Reset & Base */
+.esp-service-detail {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #446A3B;
+  background: #F8F3EA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.esp-service-detail * {
+  box-sizing: border-box;
+}
+
+.esp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.esp-section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.esp-section-header h2 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #DB9598;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.esp-section-header p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #446A3B;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.esp-hero {
+  background: linear-gradient(135deg, #DB9598 0%, #c48386 100%);
+  color: #ffffff;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.esp-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(248, 243, 234, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.esp-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.esp-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.esp-hero-badge svg {
+  opacity: 0.9;
+}
+
+.esp-hero h1 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.esp-hero-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0 0 36px 0;
+  opacity: 0.95;
+}
+
+.esp-hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.esp-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.esp-feature-item svg {
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+.esp-hero-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.esp-btn-primary,
+.esp-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-height: 52px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.esp-btn-primary {
+  background: #ffffff;
+  color: #446A3B;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
+}
+
+.esp-btn-primary:hover {
+  background: #F8F3EA;
+  color: #446A3B;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.4);
+}
+
+.esp-btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.esp-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+}
+
+/* ============================================
+   OVERVIEW SECTION
+   ============================================ */
+.esp-overview {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.esp-overview-grid {
+  display: grid;
+  gap: 48px;
+}
+
+.esp-overview-content h2 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #446A3B;
+  margin: 0 0 24px 0;
+  line-height: 1.3;
+}
+
+.esp-overview-content p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+  opacity: 0.95;
+}
+
+.esp-highlight-box {
+  background: linear-gradient(135deg, #F8F3EA 0%, #ffffff 100%);
+  border-left: 4px solid #DB9598;
+  padding: 24px;
+  border-radius: 12px;
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.esp-highlight-box svg {
+  flex-shrink: 0;
+  color: #DB9598;
+  margin-top: 4px;
+}
+
+.esp-highlight-box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.esp-highlight-box strong {
+  font-weight: 600;
+  color: #446A3B;
+}
+
+.esp-overview-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.esp-stat-card {
+  background: linear-gradient(135deg, #DB9598 0%, #c48386 100%);
+  color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(219, 149, 152, 0.25);
+}
+
+.esp-stat-number {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.esp-stat-label {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.95;
+  color: #ffffff;
+}
+
+/* ============================================
+   TYPES DE PRÉLÈVEMENTS
+   ============================================ */
+.esp-types {
+  padding: 80px 20px;
+  background: #F8F3EA;
+}
+
+.esp-types-grid {
+  display: grid;
+  gap: 28px;
+}
+
+.esp-type-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid rgba(68, 106, 59, 0.12);
+  box-shadow: 0 2px 12px rgba(68, 106, 59, 0.08);
+  transition: all 0.3s ease;
+}
+
+.esp-type-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(68, 106, 59, 0.15);
+  border-color: #446A3B;
+}
+
+.esp-type-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.esp-type-card h3 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #446A3B;
+  margin: 0 0 20px 0;
+}
+
+.esp-type-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.esp-type-card li {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 10px 0;
+  padding-left: 28px;
+  position: relative;
+}
+
+.esp-type-card li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #DB9598;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ============================================
+   PROCESS STEPS
+   ============================================ */
+.esp-process {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.esp-process-steps {
+  display: grid;
+  gap: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.esp-step {
+  display: flex;
+  gap: 24px;
+}
+
+.esp-step-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #DB9598 0%, #c48386 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(219, 149, 152, 0.3);
+}
+
+.esp-step-content h3 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #446A3B;
+  margin: 0 0 12px 0;
+}
+
+.esp-step-content p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* ============================================
+   BENEFITS GRID
+   ============================================ */
+.esp-benefits {
+  padding: 80px 20px;
+  background: #F8F3EA;
+}
+
+.esp-benefits-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.esp-benefit-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid rgba(68, 106, 59, 0.12);
+  transition: all 0.3s ease;
+}
+
+.esp-benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(68, 106, 59, 0.12);
+  border-color: #446A3B;
+}
+
+.esp-benefit-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #F8F3EA 0%, #ffffff 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #446A3B;
+  border: 2px solid rgba(68, 106, 59, 0.15);
+}
+
+.esp-benefit-card h3 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #446A3B;
+  margin: 0 0 12px 0;
+}
+
+.esp-benefit-card p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.92;
+}
+
+/* ============================================
+   PREPARATION SECTION
+   ============================================ */
+.esp-preparation {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.esp-prep-content {
+  display: grid;
+  gap: 48px;
+}
+
+.esp-prep-text h2 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #446A3B;
+  margin: 0 0 16px 0;
+}
+
+.esp-prep-text > p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0 0 32px 0;
+  opacity: 0.9;
+}
+
+.esp-prep-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.esp-prep-item {
+  display: flex;
+  gap: 16px;
+}
+
+.esp-prep-item svg {
+  flex-shrink: 0;
+  color: #DB9598;
+  margin-top: 2px;
+}
+
+.esp-prep-item strong {
+  display: block;
+  font-weight: 600;
+  color: #446A3B;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.esp-prep-item p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.esp-prep-card {
+  background: linear-gradient(135deg, #DB9598 0%, #c48386 100%);
+  color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(219, 149, 152, 0.25);
+}
+
+.esp-prep-card-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.esp-prep-card h4 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+  color: #ffffff;
+}
+
+.esp-prep-card p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* ============================================
+   PRICING
+   ============================================ */
+.esp-pricing {
+  padding: 80px 20px;
+  background: #F8F3EA;
+}
+
+.esp-pricing-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(68, 106, 59, 0.15);
+  border: 2px solid rgba(68, 106, 59, 0.12);
+}
+
+.esp-pricing-header {
+  background: linear-gradient(135deg, #DB9598 0%, #c48386 100%);
+  color: #ffffff;
+  padding: 32px;
+  text-align: center;
+}
+
+.esp-pricing-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.esp-pricing-header h3 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+}
+
+.esp-pricing-body {
+  padding: 40px 32px;
+}
+
+.esp-price {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.esp-price-from {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #446A3B;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.esp-price-amount {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  color: #446A3B;
+  line-height: 1;
+}
+
+.esp-pricing-includes {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.esp-pricing-includes li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(68, 106, 59, 0.1);
+}
+
+.esp-pricing-includes li:last-child {
+  border-bottom: none;
+}
+
+.esp-pricing-includes svg {
+  color: #DB9598;
+  flex-shrink: 0;
+}
+
+.esp-pricing-note {
+  background: #F8F3EA;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #DB9598;
+}
+
+.esp-pricing-note p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.esp-pricing-note strong {
+  font-weight: 600;
+}
+
+.esp-pricing-footer {
+  padding: 0 32px 32px;
+}
+
+.esp-btn-pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background: linear-gradient(135deg, #DB9598 0%, #c48386 100%);
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: 'DM Sans', sans-serif;
+  box-shadow: 0 4px 12px rgba(219, 149, 152, 0.3);
+}
+
+.esp-btn-pricing:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(219, 149, 152, 0.4);
+}
+
+/* ============================================
+   FAQ
+   ============================================ */
+.esp-faq {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.esp-faq-grid {
+  display: grid;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.esp-faq-item {
+  background: #F8F3EA;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(68, 106, 59, 0.12);
+  transition: all 0.3s ease;
+}
+
+.esp-faq-item:hover {
+  border-color: #446A3B;
+  box-shadow: 0 4px 16px rgba(68, 106, 59, 0.1);
+}
+
+.esp-faq-item h3 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #446A3B;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.esp-faq-item p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* ============================================
+   FINAL CTA
+   ============================================ */
+.esp-final-cta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #DB9598 0%, #c48386 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.esp-final-cta::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(248, 243, 234, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.esp-final-cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.esp-final-cta-icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+  line-height: 1;
+  opacity: 0.95;
+}
+
+.esp-final-cta-content h2 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.esp-final-cta-content > p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0 0 36px 0;
+  opacity: 0.95;
+}
+
+.esp-final-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.esp-btn-cta-primary,
+.esp-btn-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 40px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-height: 56px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.esp-btn-cta-primary {
+  background: #ffffff;
+  color: #446A3B;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
+}
+
+.esp-btn-cta-primary:hover {
+  background: #F8F3EA;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.4);
+}
+
+.esp-btn-cta-secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.esp-btn-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+}
+
+.esp-final-cta-note {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* ============================================
+   RELATED SERVICES
+   ============================================ */
+.esp-related {
+  padding: 80px 20px;
+  background: #F8F3EA;
+}
+
+.esp-related-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.esp-related-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(68, 106, 59, 0.12);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.esp-related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(68, 106, 59, 0.15);
+  border-color: #446A3B;
+}
+
+.esp-related-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.esp-related-card h3 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #446A3B;
+  margin: 0 0 12px 0;
+}
+
+.esp-related-card p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+  opacity: 0.9;
+}
+
+.esp-related-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #446A3B;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.esp-related-card:hover .esp-related-link {
+  color: #DB9598;
+  gap: 12px;
+}
+
+.esp-related-link svg {
+  transition: transform 0.3s ease;
+}
+
+.esp-related-card:hover .esp-related-link svg {
+  transform: translateX(4px);
+}
+
+/* ============================================
+   RESPONSIVE - TABLET (600px+)
+   ============================================ */
+@media (min-width: 600px) {
+  .esp-container {
+    padding: 0 40px;
+  }
+
+  .esp-section-header h2 {
+    font-size: 40px;
+  }
+
+  .esp-hero {
+    padding: 80px 40px;
+  }
+
+  .esp-hero h1 {
+    font-size: 52px;
+  }
+
+  .esp-hero-subtitle {
+    font-size: 20px;
+  }
+
+  .esp-hero-cta {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .esp-overview-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .esp-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .esp-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .esp-prep-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .esp-final-cta-buttons {
+    flex-direction: row;
+  }
+
+  .esp-related-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============================================
+   RESPONSIVE - DESKTOP (900px+)
+   ============================================ */
+@media (min-width: 900px) {
+  .esp-section-header h2 {
+    font-size: 48px;
+  }
+
+  .esp-hero h1 {
+    font-size: 60px;
+  }
+
+  .esp-overview-grid {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: start;
+  }
+
+  .esp-types-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .esp-benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .esp-final-cta-content h2 {
+    font-size: 44px;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY & PERFORMANCE
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .esp-service-detail * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+.esp-btn-primary:focus,
+.esp-btn-secondary:focus,
+.esp-btn-pricing:focus,
+.esp-btn-cta-primary:focus,
+.esp-btn-cta-secondary:focus,
+.esp-related-card:focus {
+  outline: 3px solid #DB9598;
+  outline-offset: 4px;
+}
+
+/* Print Styles */
+@media print {
+  .esp-hero-cta,
+  .esp-final-cta,
+  .esp-related {
+    display: none;
+  }
+}
+</style>
