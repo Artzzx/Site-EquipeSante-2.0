@@ -5,7 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Soins infirmiers à domicile sur la Rive-Sud de Montréal. Services professionnels, humains et accessibles directement chez vous. Longueuil, Brossard, Saint-Hubert, Boucherville.">
     <title>Équipe Santé+ | Soins infirmiers à domicile Rive-Sud</title>
-    
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://equipesanteplus.ca/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://equipesanteplus.ca/">
+    <meta property="og:title" content="Équipe Santé+ | Soins infirmiers à domicile Rive-Sud">
+    <meta property="og:description" content="Soins infirmiers à domicile sur la Rive-Sud de Montréal. Services professionnels, humains et accessibles directement chez vous. Longueuil, Brossard, Saint-Hubert, Boucherville.">
+    <meta property="og:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
+    <meta property="og:locale" content="fr_CA">
+    <meta property="og:site_name" content="Équipe Santé+">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://equipesanteplus.ca/">
+    <meta property="twitter:title" content="Équipe Santé+ | Soins infirmiers à domicile Rive-Sud">
+    <meta property="twitter:description" content="Soins infirmiers à domicile sur la Rive-Sud de Montréal. Services professionnels, humains et accessibles directement chez vous.">
+    <meta property="twitter:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +108,7 @@
         ============================================ */
         .hero {
             background: linear-gradient(135deg, rgba(219, 149, 152, 0.15) 0%, rgba(248, 243, 234, 1) 100%);
-            padding: 80px 0;
+            padding: 80px 0 60px;
             position: relative;
             overflow: hidden;
         }
@@ -785,6 +804,10 @@
                 padding: 80px 0;
             }
 
+            .container {
+                padding: 0 40px;
+            }
+
             .services-grid {
                 grid-template-columns: repeat(3, 1fr);
                 gap: 32px;
@@ -1240,10 +1263,14 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MedicalBusiness",
+      "@type": ["MedicalBusiness", "LocalBusiness"],
       "name": "Équipe Santé+",
       "description": "Soins infirmiers à domicile sur la Rive-Sud de Montréal",
       "url": "https://equipesanteplus.ca",
+      "logo": "https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp",
+      "image": "https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp",
+      "telephone": "+1-579-957-9690",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Rive-Sud",
@@ -1251,35 +1278,81 @@
         "addressCountry": "CA"
       },
       "areaServed": [
-        "Longueuil",
-        "Brossard",
-        "Saint-Hubert",
-        "Saint-Lambert",
-        "Greenfield Park",
-        "Boucherville",
-        "Saint-Bruno",
-        "La Prairie",
-        "Candiac"
+        {
+          "@type": "City",
+          "name": "Longueuil"
+        },
+        {
+          "@type": "City",
+          "name": "Brossard"
+        },
+        {
+          "@type": "City",
+          "name": "Saint-Hubert"
+        },
+        {
+          "@type": "City",
+          "name": "Saint-Lambert"
+        },
+        {
+          "@type": "City",
+          "name": "Greenfield Park"
+        },
+        {
+          "@type": "City",
+          "name": "Boucherville"
+        },
+        {
+          "@type": "City",
+          "name": "Saint-Bruno"
+        },
+        {
+          "@type": "City",
+          "name": "La Prairie"
+        },
+        {
+          "@type": "City",
+          "name": "Candiac"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
       ],
       "medicalSpecialty": "Nursing",
       "availableService": [
         {
           "@type": "MedicalProcedure",
-          "name": "Prélèvements sanguins"
+          "name": "Prélèvements sanguins",
+          "description": "Prélèvements sanguins professionnels à domicile"
         },
         {
           "@type": "MedicalProcedure",
-          "name": "Soins de pieds"
+          "name": "Soins de pieds",
+          "description": "Soins podologiques professionnels pour diabétiques et personnes âgées"
         },
         {
           "@type": "MedicalProcedure",
-          "name": "Lavage d'oreilles"
+          "name": "Lavage d'oreilles",
+          "description": "Irrigation auriculaire pour éliminer les bouchons de cérumen"
         },
         {
           "@type": "MedicalProcedure",
-          "name": "Administration de médicaments"
+          "name": "Administration de médicaments",
+          "description": "Administration sécuritaire de médicaments selon prescriptions"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Soins post-opératoires",
+          "description": "Suivi complet après chirurgie avec soins et surveillance"
         }
-      ]
+      ],
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Interac",
+      "currenciesAccepted": "CAD"
     }
     </script>
 </body>
