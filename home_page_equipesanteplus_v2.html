@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soins infirmiers à domicile sur la Rive-Sud de Montréal. Services professionnels, humains et accessibles directement chez vous. Longueuil, Brossard, Saint-Hubert, Boucherville.">
+    <title>Équipe Santé+ | Soins infirmiers à domicile Rive-Sud</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ============================================
+           CUSTOM FONTS
+        ============================================ */
+        @font-face {
+            font-family: 'LostaMasta';
+            src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'LostaMasta';
+            src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ============================================
+           GLOBAL RESET & BASE STYLES
+        ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #446A3B;
+            background-color: #F8F3EA;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: #446A3B;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #DB9598;
+        }
+
+        /* ============================================
+           CONTAINER & LAYOUT
+        ============================================ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        /* ============================================
+           HERO SECTION - Warm & Welcoming
+        ============================================ */
+        .hero {
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15) 0%, rgba(248, 243, 234, 1) 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(219, 149, 152, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(32px, 5vw, 56px);
+            line-height: 1.2;
+            color: #DB9598;
+            margin-bottom: 20px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(18px, 2.5vw, 24px);
+            color: #446A3B;
+            margin-bottom: 24px;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .hero-text {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+            color: #446A3B;
+            opacity: 0.92;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* ============================================
+           BUTTONS - Premium Style
+        ============================================ */
+        .btn {
+            font-family: 'DM Sans', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 36px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 52px;
+            justify-content: center;
+            border: 2px solid transparent;
+        }
+
+        .btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover svg {
+            transform: translateX(4px);
+        }
+
+        .btn-primary {
+            background: #DB9598;
+            color: #ffffff;
+            box-shadow: 0 4px 16px rgba(219, 149, 152, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #c77f83;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(219, 149, 152, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #446A3B;
+            border-color: #446A3B;
+        }
+
+        .btn-secondary:hover {
+            background: #446A3B;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           TEAM SECTION - 2 Infirmières + Photo Commune
+        ============================================ */
+        .team-section {
+            background: #ffffff;
+        }
+
+        .team-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .team-intro h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 400;
+            color: #DB9598;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .team-intro p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.92;
+        }
+
+        /* Team Grid - 2 Nurses + 1 Common Photo */
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            margin-bottom: 50px;
+        }
+
+        .team-member {
+            background: #F8F3EA;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(68, 106, 59, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(68, 106, 59, 0.12);
+        }
+
+        .team-member:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(68, 106, 59, 0.15);
+            border-color: #DB9598;
+        }
+
+        .team-member-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+        }
+
+        .team-member-info {
+            padding: 28px;
+            text-align: center;
+        }
+
+        .team-member-name {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 24px;
+            color: #DB9598;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .team-member-title {
+            font-size: 15px;
+            color: #446A3B;
+            font-weight: 400;
+            opacity: 0.85;
+        }
+
+        /* Common Photo - Full Width Highlight */
+        .team-photo-common {
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.1) 0%, rgba(164, 190, 207, 0.1) 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(68, 106, 59, 0.08);
+        }
+
+        .team-photo-common img {
+            border-radius: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 8px 32px rgba(68, 106, 59, 0.12);
+        }
+
+        .team-photo-caption {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 22px;
+            color: #446A3B;
+            margin-top: 24px;
+            font-weight: 400;
+        }
+
+        /* ============================================
+           STATS SECTION
+        ============================================ */
+        .stats-section {
+            background: #F8F3EA;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 24px;
+        }
+
+        .stat-number {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 48px;
+            color: #DB9598;
+            margin-bottom: 8px;
+            display: block;
+            font-weight: 400;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: #446A3B;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        /* ============================================
+           SERVICES SECTION - Premium Cards Style
+        ============================================ */
+        .services-section {
+            background: #ffffff;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .services-header h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 400;
+            color: #DB9598;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .services-header p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #446A3B;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.92;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+
+        /* Service Card - Enhanced Premium Design */
+        .service-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 0;
+            box-shadow: 0 2px 12px rgba(68, 106, 59, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(68, 106, 59, 0.12);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Subtle gradient accent bar at top */
+        .card-accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #DB9598 0%, #A4BECF 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .service-card:hover .card-accent {
+            opacity: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(68, 106, 59, 0.15);
+            border-color: #DB9598;
+        }
+
+        /* Icon Wrapper - Circular background */
+        .service-icon-wrapper {
+            padding: 28px 28px 0 28px;
+            margin-bottom: 20px;
+        }
+
+        .service-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #F8F3EA 0%, #ffffff 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            line-height: 1;
+            border: 2px solid rgba(68, 106, 59, 0.1);
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 12px rgba(68, 106, 59, 0.06);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.08);
+            border-color: #DB9598;
+            box-shadow: 0 6px 20px rgba(219, 149, 152, 0.2);
+        }
+
+        /* Card Content */
+        .card-content {
+            padding: 0 28px 28px 28px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .service-card h3 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            color: #446A3B;
+            margin: 0 0 14px 0;
+            line-height: 1.35;
+            letter-spacing: -0.01em;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            font-weight: 300;
+            color: #446A3B;
+            line-height: 1.65;
+            margin: 0 0 24px 0;
+            flex-grow: 1;
+            opacity: 0.92;
+        }
+
+        /* Service Link */
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #446A3B;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            min-height: 44px;
+            padding: 8px 0;
+        }
+
+        .service-link svg {
+            transition: transform 0.3s ease;
+        }
+
+        .service-link:hover {
+            color: #DB9598;
+            gap: 12px;
+        }
+
+        .service-link:hover svg {
+            transform: translateX(4px);
+        }
+
+        /* ============================================
+           WHY CHOOSE US SECTION
+        ============================================ */
+        .why-section {
+            background: #F8F3EA;
+        }
+
+        .why-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .why-header h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 400;
+            color: #DB9598;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .why-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(68, 106, 59, 0.08);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+            transition: all 0.4s ease;
+        }
+
+        .why-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(68, 106, 59, 0.12);
+            border-color: #DB9598;
+        }
+
+        .why-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15), rgba(164, 190, 207, 0.15));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 20px;
+            border: 2px solid rgba(219, 149, 152, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .why-card:hover .why-icon {
+            transform: scale(1.1);
+            border-color: #DB9598;
+        }
+
+        .why-card h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 22px;
+            color: #446A3B;
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .why-card p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           COVERAGE SECTION
+        ============================================ */
+        .coverage-section {
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .coverage-section h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 400;
+            color: #DB9598;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .coverage-section > p {
+            font-size: 17px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            color: #446A3B;
+            opacity: 0.92;
+        }
+
+        .coverage-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            list-style: none;
+        }
+
+        .coverage-item {
+            background: #F8F3EA;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: 400;
+            color: #446A3B;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(68, 106, 59, 0.1);
+        }
+
+        .coverage-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(219, 149, 152, 0.2);
+            background: #DB9598;
+            color: #ffffff;
+            border-color: #DB9598;
+        }
+
+        /* ============================================
+           CTA SECTION - Green Background
+        ============================================ */
+        .cta-section {
+            background: linear-gradient(135deg, #446A3B 0%, #365330 100%);
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(219, 149, 152, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-section h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(28px, 4vw, 42px);
+            color: #F8F3EA;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .cta-section p {
+            font-size: 17px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            color: #F8F3EA;
+            line-height: 1.7;
+        }
+
+        .btn-white {
+            background: #F8F3EA;
+            color: #446A3B;
+            box-shadow: 0 4px 16px rgba(248, 243, 234, 0.3);
+        }
+
+        .btn-white:hover {
+            background: #DB9598;
+            color: #ffffff;
+            box-shadow: 0 8px 24px rgba(219, 149, 152, 0.4);
+        }
+
+        /* ============================================
+           FOOTER - Rose Background
+        ============================================ */
+        .footer {
+            background: linear-gradient(135deg, #DB9598 0%, #c77f83 100%);
+            color: #ffffff;
+            padding: 60px 0 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .footer-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .footer h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-weight: 400;
+        }
+
+        .footer p {
+            font-size: 15px;
+            line-height: 1.7;
+            opacity: 0.95;
+            margin-bottom: 16px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+            font-size: 15px;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+        ============================================ */
+        @media (min-width: 600px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 28px;
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 28px;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .section {
+                padding: 80px 0;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 32px;
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 32px;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .service-icon-wrapper {
+                padding: 32px 32px 0 32px;
+            }
+
+            .card-content {
+                padding: 0 32px 32px 32px;
+            }
+
+            .service-card h3 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        /* ============================================
+           ACCESSIBILITY
+        ============================================ */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .service-link:focus,
+        .btn:focus {
+            outline: 3px solid #DB9598;
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
+
+        /* Skip to content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #446A3B;
+            color: #ffffff;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="main-content">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Soins infirmiers à domicile sur la Rive-Sud</h1>
+                <p class="hero-subtitle">Des soins de santé accessibles, humains et professionnels — directement chez vous.</p>
+                <p class="hero-text">
+                    Que vous habitiez à Longueuil, Brossard, Saint-Hubert, Saint-Lambert, Greenfield Park ou Boucherville, 
+                    nos infirmières qualifiées se déplacent pour vous offrir des soins de qualité dans le confort de votre foyer.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Prendre rendez-vous</span>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 4L13 9L7 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <span>Découvrir nos soins</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION - 2 Nurses + Common Photo -->
+    <section class="section team-section" id="equipe">
+        <div class="container">
+            <div class="team-intro">
+                <h2>Rencontrez nos infirmières</h2>
+                <p>
+                    Une équipe d'infirmières dévouées, qualifiées et passionnées par les soins à domicile. 
+                    Nous mettons notre expertise au service de votre bien-être, avec bienveillance et professionnalisme.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://equipesanteplus.ca/wp-content/uploads/2025/11/nkljnlk48029.webp" 
+                         alt="Infirmière professionnelle de l'Équipe Santé+" 
+                         class="team-member-image"
+                         loading="lazy">
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Membre de l'équipe</h3>
+                        <p class="team-member-title">Infirmière autorisée</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://equipesanteplus.ca/wp-content/uploads/2025/05/processed-4468454B-0107-48E7-AF1C-0FAA7A52696D-e1748112810438.webp" 
+                         alt="Infirmière professionnelle de l'Équipe Santé+" 
+                         class="team-member-image"
+                         loading="lazy">
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Membre de l'équipe</h3>
+                        <p class="team-member-title">Infirmière autorisée</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Common Team Photo -->
+            <div class="team-photo-common">
+                <img src="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp" 
+                     alt="L'équipe d'Équipe Santé+ - Soins infirmiers à domicile" 
+                     loading="lazy">
+                <p class="team-photo-caption">Notre équipe, à votre service sur la Rive-Sud</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <p class="stat-label">Soins personnalisés</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/48h</span>
+                    <p class="stat-label">Disponibilité rapide</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">7j/7</span>
+                    <p class="stat-label">Service disponible</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Rive-Sud</span>
+                    <p class="stat-label">Couverture complète</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION - Premium Cards -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="services-header">
+                <h2>Nos services de soins infirmiers</h2>
+                <p>Des soins professionnels adaptés à vos besoins, réalisés dans le confort de votre domicile.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="card-accent"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">💉</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 itemprop="name">Prise de sang et Prélèvements</h3>
+                        <p itemprop="description">Prélèvements sanguins professionnels à domicile ou au bureau. Service rapide, sécuritaire avec résultats en 24h.</p>
+                        <a href="https://equipesanteplus.ca/soins-infirmier/prelevements/" class="service-link" aria-label="En savoir plus sur les prélèvements sanguins">
+                            <span>En savoir plus</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Service 2 -->
+                <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="card-accent"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🦶</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 itemprop="name">Soins de Pied</h3>
+                        <p itemprop="description">Soins podologiques professionnels à domicile par infirmières qualifiées. Idéal pour diabétiques et personnes âgées.</p>
+                        <a href="https://equipesanteplus.ca/soins-infirmier/soins-de-pied/" class="service-link" aria-label="En savoir plus sur les soins de pied">
+                            <span>En savoir plus</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Service 3 -->
+                <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="card-accent"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">👂</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 itemprop="name">Lavage d'Oreille</h3>
+                        <p itemprop="description">Irrigation auriculaire professionnelle pour éliminer les bouchons de cérumen. Soulagement immédiat à domicile.</p>
+                        <a href="https://equipesanteplus.ca/soins-infirmier/lavage-oreille/" class="service-link" aria-label="En savoir plus sur le lavage d'oreille">
+                            <span>En savoir plus</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Service 4 -->
+                <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="card-accent"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">💊</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 itemprop="name">Administration de Médicaments</h3>
+                        <p itemprop="description">Prise de médicaments sécuritaire à domicile selon prescriptions médicales. Suivi rigoureux par infirmière.</p>
+                        <a href="https://equipesanteplus.ca/soins-infirmier/administration-med/" class="service-link" aria-label="En savoir plus sur l'administration de médicaments">
+                            <span>En savoir plus</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Service 5 -->
+                <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="card-accent"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🏥</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 itemprop="name">Soins Post-Opératoires</h3>
+                        <p itemprop="description">Suivi complet après chirurgie: soins, pansements, surveillance. Rétablissement serein dans votre environnement.</p>
+                        <a href="https://equipesanteplus.ca/soins-infirmier/soins-post-operatoires/" class="service-link" aria-label="En savoir plus sur les soins post-opératoires">
+                            <span>En savoir plus</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Service 6 -->
+                <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="card-accent"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">📋</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 itemprop="name">Ordonnances Collectives</h3>
+                        <p itemprop="description">Évaluation et traitement rapide pour certaines conditions sans consultation médicale préalable.</p>
+                        <a href="https://equipesanteplus.ca/ordonnances/" class="service-link" aria-label="En savoir plus sur les ordonnances collectives">
+                            <span>En savoir plus</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://equipesanteplus.ca/soins-infirmier/" class="btn btn-primary">
+                    <span>Voir tous nos soins</span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 4L13 9L7 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="section why-section" id="pourquoi">
+        <div class="container">
+            <div class="why-header">
+                <h2>Pourquoi choisir Équipe Santé+ ?</h2>
+            </div>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">⚡</div>
+                    <h3>Accès rapide</h3>
+                    <p>
+                        Rendez-vous rapides adaptés à votre horaire. Tôt le matin, en soirée ou le week-end : 
+                        nous nous adaptons à votre vie.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">🏡</div>
+                    <h3>Confort à domicile</h3>
+                    <p>
+                        Recevez des soins professionnels sans vous déplacer. 
+                        Économisez temps et stress tout en restant dans votre environnement familier.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">💡</div>
+                    <h3>Promotion de l'autonomie</h3>
+                    <p>
+                        Nos infirmières vous éduquent et vous outillent pour mieux gérer votre santé. 
+                        Nous prenons le temps d'expliquer et de répondre à vos questions.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">❤️</div>
+                    <h3>Soins humains</h3>
+                    <p>
+                        Une approche bienveillante et personnalisée. Chaque patient est unique, 
+                        et mérite toute notre attention et notre respect.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">✅</div>
+                    <h3>Qualité professionnelle</h3>
+                    <p>
+                        Infirmières autorisées et qualifiées. Standards élevés d'hygiène et de sécurité, 
+                        selon les meilleures pratiques.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">🌍</div>
+                    <h3>Service multilingue</h3>
+                    <p>
+                        Certains membres de notre équipe peuvent offrir des soins en portugais ou en espagnol, 
+                        selon leur disponibilité.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COVERAGE AREA SECTION -->
+    <section class="section coverage-section">
+        <div class="container">
+            <h2>Zones desservies sur la Rive-Sud</h2>
+            <p>Nos infirmières se déplacent dans toute la région de la Rive-Sud de Montréal</p>
+            
+            <ul class="coverage-list">
+                <li class="coverage-item">Longueuil</li>
+                <li class="coverage-item">Brossard</li>
+                <li class="coverage-item">Saint-Hubert</li>
+                <li class="coverage-item">Saint-Lambert</li>
+                <li class="coverage-item">Greenfield Park</li>
+                <li class="coverage-item">Boucherville</li>
+                <li class="coverage-item">Saint-Bruno</li>
+                <li class="coverage-item">La Prairie</li>
+                <li class="coverage-item">Candiac</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prenez soin de votre santé, dès aujourd'hui</h2>
+                <p>
+                    Ne remettez pas vos soins à plus tard. Contactez-nous pour planifier votre premier soin infirmier à domicile.
+                    Nous sommes prêts à vous aider rapidement, avec bienveillance et efficacité.
+                </p>
+                <div class="hero-cta" style="justify-content: center;">
+                    <a href="https://equipesanteplus.ca/contact/" class="btn btn-white">
+                        <span>Nous contacter</span>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 4L13 9L7 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://equipesanteplus.ca/rendez-vous/" class="btn btn-secondary" style="border-color: #ffffff; color: #ffffff;">
+                        <span>Prendre rendez-vous</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER - Rose Background -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>À propos</h3>
+                <p>Des soins à domicile personnalisés, humains et professionnels. Notre mission est de rendre les soins de santé accessibles à tous, avec compassion et efficacité.</p>
+            </div>
+
+            <div>
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="https://equipesanteplus.ca/">Accueil</a></li>
+                    <li><a href="https://equipesanteplus.ca/soins-infirmier/">Nos soins</a></li>
+                    <li><a href="https://equipesanteplus.ca/ordonnances/">Ordonnances</a></li>
+                    <li><a href="https://equipesanteplus.ca/prix/">Liste de prix</a></li>
+                    <li><a href="https://equipesanteplus.ca/a-propos/">À propos</a></li>
+                    <li><a href="https://equipesanteplus.ca/faq/">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Services principaux</h3>
+                <ul class="footer-links">
+                    <li><a href="https://equipesanteplus.ca/soins-infirmier/prelevements/">Prélèvements</a></li>
+                    <li><a href="https://equipesanteplus.ca/soins-infirmier/soins-de-pied/">Soins de pieds</a></li>
+                    <li><a href="https://equipesanteplus.ca/soins-infirmier/lavage-oreille/">Lavage d'oreille</a></li>
+                    <li><a href="https://equipesanteplus.ca/soins-infirmier/administration-med/">Administration médicaments</a></li>
+                    <li><a href="https://equipesanteplus.ca/contact/">Contact</a></li>
+                    <li><a href="https://equipesanteplus.ca/rendez-vous/">Prendre rendez-vous</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© Équipe Santé Plus 2026 - Soins infirmiers à domicile sur la Rive-Sud</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Équipe Santé+",
+      "description": "Soins infirmiers à domicile sur la Rive-Sud de Montréal",
+      "url": "https://equipesanteplus.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rive-Sud",
+        "addressRegion": "QC",
+        "addressCountry": "CA"
+      },
+      "areaServed": [
+        "Longueuil",
+        "Brossard",
+        "Saint-Hubert",
+        "Saint-Lambert",
+        "Greenfield Park",
+        "Boucherville",
+        "Saint-Bruno",
+        "La Prairie",
+        "Candiac"
+      ],
+      "medicalSpecialty": "Nursing",
+      "availableService": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Prélèvements sanguins"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Soins de pieds"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Lavage d'oreilles"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Administration de médicaments"
+        }
+      ]
+    }
+    </script>
+</body>
+</html>
