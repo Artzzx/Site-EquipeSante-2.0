@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tarifs transparents pour les soins infirmiers à domicile sur la Rive-Sud. Prélèvements, soins de pieds, administration de médicaments et plus.">
+    <title>Liste de prix - Équipe Santé+ | Soins infirmiers à domicile</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ============================================
+           CUSTOM FONTS
+        ============================================ */
+        @font-face {
+            font-family: 'LostaMasta';
+            src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'LostaMasta';
+            src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ============================================
+           GLOBAL STYLES
+        ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #446A3B;
+            background-color: #F8F3EA;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ============================================
+           HERO SECTION
+        ============================================ */
+        .hero {
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15) 0%, #F8F3EA 100%);
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(219, 149, 152, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(219, 149, 152, 0.15);
+            color: #DB9598;
+            padding: 10px 20px;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+            border: 1px solid rgba(219, 149, 152, 0.3);
+        }
+
+        .hero h1 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(36px, 5vw, 56px);
+            line-height: 1.2;
+            color: #DB9598;
+            margin-bottom: 20px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.92;
+            margin-bottom: 40px;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 400;
+            color: #446A3B;
+        }
+
+        .feature-item svg {
+            color: #DB9598;
+            flex-shrink: 0;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* ============================================
+           BUTTONS
+        ============================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            min-height: 52px;
+            justify-content: center;
+            border: 2px solid transparent;
+        }
+
+        .btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover svg {
+            transform: translateX(4px);
+        }
+
+        .btn-primary {
+            background: #DB9598;
+            color: #ffffff;
+            box-shadow: 0 4px 16px rgba(219, 149, 152, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #c77f83;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(219, 149, 152, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #446A3B;
+            border-color: #446A3B;
+        }
+
+        .btn-secondary:hover {
+            background: #446A3B;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           SECTION STYLES
+        ============================================ */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-white {
+            background: #ffffff;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .section-header h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 400;
+            color: #DB9598;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-header p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.92;
+        }
+
+        /* ============================================
+           PRICING CATEGORIES
+        ============================================ */
+        .pricing-category {
+            margin-bottom: 60px;
+        }
+
+        .pricing-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid rgba(219, 149, 152, 0.2);
+        }
+
+        .category-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15), rgba(164, 190, 207, 0.15));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            border: 2px solid rgba(219, 149, 152, 0.2);
+            flex-shrink: 0;
+        }
+
+        .category-header h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 28px;
+            color: #446A3B;
+            font-weight: 400;
+        }
+
+        /* Price Cards Grid */
+        .price-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .price-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 0;
+            box-shadow: 0 2px 12px rgba(68, 106, 59, 0.08);
+            border: 1px solid rgba(68, 106, 59, 0.12);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .price-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(68, 106, 59, 0.15);
+            border-color: #DB9598;
+        }
+
+        /* Accent bar */
+        .price-accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #DB9598 0%, #A4BECF 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .price-card:hover .price-accent {
+            opacity: 1;
+        }
+
+        .price-card-content {
+            padding: 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 24px;
+        }
+
+        .price-info {
+            flex: 1;
+        }
+
+        .price-info h4 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 20px;
+            color: #446A3B;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .price-description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.85;
+            margin: 0;
+        }
+
+        .price-amount {
+            flex-shrink: 0;
+            text-align: right;
+        }
+
+        .price-value {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 28px;
+            color: #DB9598;
+            font-weight: 400;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .price-label {
+            font-size: 13px;
+            color: #446A3B;
+            opacity: 0.7;
+        }
+
+        /* ============================================
+           INFO BOXES
+        ============================================ */
+        .info-box {
+            background: rgba(219, 149, 152, 0.08);
+            border-left: 4px solid #DB9598;
+            padding: 20px 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .info-box strong {
+            color: #DB9598;
+            font-weight: 600;
+        }
+
+        /* ============================================
+           INCLUDED SECTION
+        ============================================ */
+        .included-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .included-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 2px 12px rgba(68, 106, 59, 0.08);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .included-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(68, 106, 59, 0.12);
+            border-color: #DB9598;
+        }
+
+        .included-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15), rgba(164, 190, 207, 0.15));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(219, 149, 152, 0.2);
+        }
+
+        .included-card h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 22px;
+            color: #446A3B;
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .included-card p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           FAQ SECTION
+        ============================================ */
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.06);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+        }
+
+        .faq-question {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 20px;
+            color: #446A3B;
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .faq-answer {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           CTA SECTION
+        ============================================ */
+        .cta-section {
+            background: linear-gradient(135deg, #446A3B 0%, #365330 100%);
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(219, 149, 152, 0.15) 0%, transparent 70%);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-section h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(28px, 4vw, 42px);
+            color: #F8F3EA;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .cta-section p {
+            font-size: 17px;
+            margin-bottom: 32px;
+            opacity: 0.95;
+            color: #F8F3EA;
+            line-height: 1.7;
+        }
+
+        .btn-white {
+            background: #F8F3EA;
+            color: #446A3B;
+            box-shadow: 0 4px 16px rgba(248, 243, 234, 0.3);
+        }
+
+        .btn-white:hover {
+            background: #DB9598;
+            color: #ffffff;
+            box-shadow: 0 8px 24px rgba(219, 149, 152, 0.4);
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+        ============================================ */
+        @media (min-width: 600px) {
+            .included-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .price-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .section {
+                padding: 80px 0;
+            }
+
+            .included-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0 40px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .price-card-content {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .price-amount {
+                text-align: left;
+            }
+
+            .feature-item {
+                flex-basis: 100%;
+            }
+        }
+
+        /* ============================================
+           ACCESSIBILITY
+        ============================================ */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .btn:focus {
+            outline: 3px solid #DB9598;
+            outline-offset: 4px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #446A3B;
+            color: #ffffff;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="main-content">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M6.5 10L9 12.5L13.5 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Tarification transparente
+                </div>
+                <h1>Liste de prix détaillée</h1>
+                <p class="hero-subtitle">
+                    Des tarifs clairs et transparents pour tous nos services de soins infirmiers à domicile sur la Rive-Sud. 
+                    Aucun frais caché, aucune surprise.
+                </p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Prix fixes garantis</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Aucun frais caché</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Paiement facile</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="https://equipesanteplus.ca/contact/" class="btn btn-primary">
+                        <span>Obtenir un devis</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 4L14 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#pricing" class="btn btn-secondary">
+                        <span>Voir les prix</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <!-- Prélèvements -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">💉</div>
+                    <h3>Prélèvements</h3>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Prélèvements sanguins</h4>
+                                <p class="price-description">Les prix peuvent varier selon les prélèvements. Contactez-nous avec votre prescription pour un prix exact.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">À partir de 90$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soins de pieds -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">🦶</div>
+                    <h3>Soins de pieds</h3>
+                </div>
+                <div class="info-box">
+                    <p><strong>Note :</strong> Contactez-nous pour obtenir les tarifs détaillés de nos soins podologiques professionnels.</p>
+                </div>
+            </div>
+
+            <!-- Lavage d'oreille -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">👂</div>
+                    <h3>Lavage d'oreille</h3>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Service en deux rendez-vous</h4>
+                                <p class="price-description">Si vous détenez une prescription médicale, un seul rendez-vous suffit.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">85$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Administration de médicaments -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">💊</div>
+                    <h3>Administration de médicaments</h3>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Administration de médicament(s)</h4>
+                                <p class="price-description">Inclut l'administration par voie orale, sous-cutanée, en gouttes, intramusculaire ou topique. Selon prescription.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">60$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accompagnement aînés -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">🤝</div>
+                    <h3>Accompagnement des aînés</h3>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Première heure</h4>
+                                <p class="price-description">Contactez-nous pour la prise du premier rendez-vous. Nous adaptons le service aux besoins de vos proches.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">70$</span>
+                                <span class="price-label">1ère heure</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Heures supplémentaires</h4>
+                                <p class="price-description">Tarif horaire pour les heures suivantes d'accompagnement.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">30$</span>
+                                <span class="price-label">par heure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prise de glycémie -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">📊</div>
+                    <h3>Suivi diabétique et tension</h3>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Prise de glycémie</h4>
+                                <p class="price-description">Ayez en main votre carnet de suivi et mentionnez tout changement de médication ou de régime.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">50$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Prise de tension artérielle</h4>
+                                <p class="price-description">Repos de 5-10 minutes recommandé avant la mesure. Mentionnez toute médication antihypertensive.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">50$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Retrait d'agrafes -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">📌</div>
+                    <h3>Retrait d'agrafes</h3>
+                </div>
+                <div class="info-box">
+                    <p><strong>Important :</strong> Respectez le temps recommandé par votre professionnel de la santé avant de prendre rendez-vous.</p>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>1 à 5 agrafes</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">100$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>6 à 10 agrafes</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">115$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>11 à 19 agrafes</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">130$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>20 agrafes et plus</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">150$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Retrait de sutures -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">🧵</div>
+                    <h3>Retrait de sutures</h3>
+                </div>
+                <div class="info-box">
+                    <p><strong>Important :</strong> Respectez le temps recommandé par votre professionnel de la santé avant de prendre rendez-vous.</p>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>1 à 5 sutures</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">85$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>6 à 10 sutures</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">100$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>11 à 19 sutures</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">115$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>20 sutures et plus</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">130$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soins de drain -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">🔬</div>
+                    <h3>Soins de drain</h3>
+                </div>
+                <div class="info-box">
+                    <p><strong>Prescription requise :</strong> Ce service est offert uniquement sur présentation d'une prescription médicale valide.</p>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Retrait 1 drain</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">110$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Retrait 2 drains</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">160$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Vidange 2 fois par jour</h4>
+                                <p class="price-description">Paiement réparti : 50% à la 1ère visite, 50% à la 2e visite.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">90$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Suivi post-opératoire -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">🏥</div>
+                    <h3>Suivi infirmier post-opératoire</h3>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Premier rendez-vous</h4>
+                                <p class="price-description">L'infirmière planifiera avec vous les visites suivantes selon les indications médicales.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">110$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Premier RDV avec drain(s)</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">140$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>2e rendez-vous (30 min)</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">80$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>2e rendez-vous (45 min)</h4>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">95$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ordonnances collectives -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">📋</div>
+                    <h3>Ordonnances collectives</h3>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Infection urinaire</h4>
+                                <p class="price-description">Évaluation et traitement selon ordonnance collective.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">95$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Télémédecine -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <div class="category-icon">📱</div>
+                    <h3>Télémédecine</h3>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-accent"></div>
+                        <div class="price-card-content">
+                            <div class="price-info">
+                                <h4>Rendez-vous télémédecine</h4>
+                                <p class="price-description">Une évaluation infirmière est nécessaire avant de vous donner un rendez-vous avec notre médecin associé.</p>
+                            </div>
+                            <div class="price-amount">
+                                <span class="price-value">Nous contacter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT'S INCLUDED SECTION -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce qui est inclus dans nos tarifs</h2>
+                <p>Tous nos prix comprennent les services suivants pour votre tranquillité d'esprit</p>
+            </div>
+
+            <div class="included-grid">
+                <div class="included-card">
+                    <div class="included-icon">🏠</div>
+                    <h3>Déplacement à domicile</h3>
+                    <p>Nos infirmières se déplacent directement chez vous, au bureau ou à l'endroit de votre choix sur la Rive-Sud.</p>
+                </div>
+
+                <div class="included-card">
+                    <div class="included-icon">🧰</div>
+                    <h3>Matériel médical</h3>
+                    <p>Tout le matériel nécessaire pour les soins est inclus : équipement stérile, pansements, médicaments topiques.</p>
+                </div>
+
+                <div class="included-card">
+                    <div class="included-icon">🔒</div>
+                    <h3>Protocoles d'hygiène</h3>
+                    <p>Respect strict des normes OIIQ : stérilisation, désinfection, équipement de protection individuelle.</p>
+                </div>
+
+                <div class="included-card">
+                    <div class="included-icon">📝</div>
+                    <h3>Documentation complète</h3>
+                    <p>Notes infirmières détaillées, suivi personnalisé et communication avec votre équipe médicale.</p>
+                </div>
+
+                <div class="included-card">
+                    <div class="included-icon">⏰</div>
+                    <h3>Flexibilité horaire</h3>
+                    <p>Rendez-vous adaptés à votre horaire : tôt le matin, en soirée ou en fin de semaine selon disponibilité.</p>
+                </div>
+
+                <div class="included-card">
+                    <div class="included-icon">💬</div>
+                    <h3>Support et conseils</h3>
+                    <p>Éducation, explications claires et réponses à toutes vos questions avant, pendant et après les soins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions fréquentes sur la tarification</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">Comment effectuer le paiement ?</h3>
+                    <p class="faq-answer">Nous acceptons les paiements par carte de crédit, carte de débit, virement Interac ou argent comptant. Le paiement est effectué directement à l'infirmière lors de la visite.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Y a-t-il des frais de déplacement ?</h3>
+                    <p class="faq-answer">Non, tous nos tarifs incluent déjà les frais de déplacement sur la Rive-Sud. Aucun supplément ne vous sera facturé.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Puis-je annuler ou reporter mon rendez-vous ?</h3>
+                    <p class="faq-answer">Oui, nous demandons un préavis de 24 heures pour les annulations ou reports sans frais. Les annulations de dernière minute peuvent entraîner des frais.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Les soins sont-ils couverts par les assurances ?</h3>
+                    <p class="faq-answer">Certaines assurances privées couvrent nos services. Nous vous fournissons un reçu détaillé que vous pouvez soumettre à votre assureur pour remboursement.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Offrez-vous des forfaits ou des rabais ?</h3>
+                    <p class="faq-answer">Pour les soins récurrents ou les services à long terme, contactez-nous pour discuter de forfaits personnalisés qui pourraient mieux répondre à vos besoins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à prendre rendez-vous ?</h2>
+                <p>
+                    Contactez-nous dès maintenant pour planifier votre premier soin infirmier à domicile. 
+                    Notre équipe se fera un plaisir de répondre à toutes vos questions.
+                </p>
+                <div class="hero-cta" style="justify-content: center;">
+                    <a href="https://equipesanteplus.ca/contact/" class="btn btn-white">
+                        <span>Nous contacter</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 4L14 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema.org for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Équipe Santé+",
+      "description": "Soins infirmiers à domicile sur la Rive-Sud - Tarifs transparents",
+      "url": "https://equipesanteplus.ca/prix/",
+      "priceRange": "$$",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Interac",
+      "currenciesAccepted": "CAD"
+    }
+    </script>
+</body>
+</html>
