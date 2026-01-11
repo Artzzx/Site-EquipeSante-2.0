@@ -1,0 +1,677 @@
+<!-- Équipe Santé+ - Enhanced Premium Service Cards -->
+<div class="esp-services-container">
+  <div class="esp-services-header">
+    <h2>Nos Services de Soins Infirmiers à Domicile</h2>
+    <p class="esp-services-subtitle">Des soins professionnels adaptés à vos besoins, directement chez vous sur la Rive-Sud</p>
+  </div>
+
+  <div class="esp-services-grid">
+    
+    <!-- Service: Prélèvements -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">💉</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Prise de sang et Prélèvements</h3>
+        <p itemprop="description">Prélèvements sanguins professionnels à domicile ou au bureau. Service rapide, sécuritaire avec résultats en 24h.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/prelevements/" class="esp-service-link" aria-label="En savoir plus sur les prélèvements sanguins">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Service: Accompagnement Aînés -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">🤝</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Accompagnement des Aînés</h3>
+        <p itemprop="description">Présence bienveillante pour marche, échanges et activités quotidiennes. Briser l'isolement tout en favorisant l'autonomie.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/accompagnement-aines/" class="esp-service-link" aria-label="En savoir plus sur l'accompagnement des aînés">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Service: Soins de Pied -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">🦶</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Soins de Pied</h3>
+        <p itemprop="description">Soins podologiques professionnels à domicile par infirmières qualifiées. Idéal pour diabétiques et personnes âgées.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/soins-de-pied/" class="esp-service-link" aria-label="En savoir plus sur les soins de pied">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Service: Télémédecine -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">📱</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Service de Télémédecine</h3>
+        <p itemprop="description">Consultation médicale par téléphone sans déplacement. Rendez-vous rapide avec suivi personnalisé.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/telemedecine/" class="esp-service-link" aria-label="En savoir plus sur la télémédecine">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Service: Lavage Oreille -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">👂</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Lavage d'Oreille</h3>
+        <p itemprop="description">Irrigation auriculaire professionnelle pour éliminer les bouchons de cérumen. Soulagement immédiat à domicile.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/lavage-oreille/" class="esp-service-link" aria-label="En savoir plus sur le lavage d'oreille">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Service: Vaccination -->
+    <article class="esp-service-card esp-service-coming-soon" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">💉</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Vaccination</h3>
+        <p itemprop="description">Service de vaccination à domicile pour toute la famille. Programme complet adapté à vos besoins.</p>
+        <span class="esp-coming-soon-badge">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 1V7L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          Bientôt disponible
+        </span>
+      </div>
+    </article>
+
+    <!-- Service: Administration Médicaments -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">💊</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Administration de Médicaments</h3>
+        <p itemprop="description">Prise de médicaments sécuritaire à domicile selon prescriptions médicales. Suivi rigoureux par infirmière.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/administration-med/" class="esp-service-link" aria-label="En savoir plus sur l'administration de médicaments">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Service: Soins Post-Opératoires -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">🏥</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Soins Post-Opératoires</h3>
+        <p itemprop="description">Suivi complet après chirurgie: soins, pansements, surveillance. Rétablissement serein dans votre environnement.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/soins-post-operatoires/" class="esp-service-link" aria-label="En savoir plus sur les soins post-opératoires">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Service: Glycémie -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">🩸</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Prise de Glycémie</h3>
+        <p itemprop="description">Mesure de glycémie à domicile pour suivi du diabète. Accompagnement personnalisé et conseils adaptés.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/suivi-db/" class="esp-service-link" aria-label="En savoir plus sur la prise de glycémie">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Service: Tension Artérielle -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">❤️</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Prise de Tension Artérielle</h3>
+        <p itemprop="description">Mesure professionnelle de pression à domicile avec conseils personnalisés. Suivi cardiovasculaire optimal.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/prise-ta/" class="esp-service-link" aria-label="En savoir plus sur la prise de tension artérielle">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Service: Retrait Agrafes -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">✂️</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Retrait Agrafes et Sutures</h3>
+        <p itemprop="description">Retrait professionnel d'agrafes et sutures à domicile selon délais recommandés. Guérison optimale garantie.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/retrait-agrafes-et-suture/" class="esp-service-link" aria-label="En savoir plus sur le retrait d'agrafes et sutures">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Service: Soins de Drains -->
+    <article class="esp-service-card" itemscope itemtype="https://schema.org/Service">
+      <div class="esp-card-accent"></div>
+      <div class="esp-service-icon-wrapper">
+        <div class="esp-service-icon">🔬</div>
+      </div>
+      <div class="esp-card-content">
+        <h3 itemprop="name">Soins de Drains</h3>
+        <p itemprop="description">Suivi des drains chirurgicaux (Jackson-Pratt) à domicile. Surveillance, nettoyage et prévention des complications.</p>
+        <a href="https://equipesanteplus.ca/soins-infirmier/soins-de-drain-jp/" class="esp-service-link" aria-label="En savoir plus sur les soins de drains">
+          <span>En savoir plus</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Enhanced CTA Section -->
+  <div class="esp-services-cta">
+    <div class="esp-cta-content">
+      <div class="esp-cta-icon">💬</div>
+      <h3>Besoin d'un soin qui n'apparaît pas ici?</h3>
+      <p>Contactez-nous pour discuter de vos besoins spécifiques. Nos infirmières qualifiées sont là pour vous accompagner avec professionnalisme et bienveillance.</p>
+      <a href="https://equipesanteplus.ca/contact/" class="esp-cta-button">
+        <span>Nous contacter</span>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 4L13 9L7 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ============================================
+   ÉQUIPE SANTÉ+ - Enhanced Premium Service Cards
+   Mobile-First | Brand Typography | Warm & Professional
+   ============================================ */
+
+/* Font Loading */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'LostaMasta';
+  src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LostaMasta';
+  src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Container */
+.esp-services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #F8F3EA;
+}
+
+/* Header Section */
+.esp-services-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.esp-services-header h2 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #DB9598;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.esp-services-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #446A3B;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* Services Grid */
+.esp-services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+/* Service Card - Enhanced Premium Design */
+.esp-service-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 0;
+  box-shadow: 0 2px 12px rgba(68, 106, 59, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(68, 106, 59, 0.12);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Subtle gradient accent bar at top */
+.esp-card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #DB9598 0%, #A4BECF 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.esp-service-card:hover .esp-card-accent {
+  opacity: 1;
+}
+
+.esp-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(68, 106, 59, 0.15);
+  border-color: #446A3B;
+}
+
+/* Icon Wrapper - Circular background */
+.esp-service-icon-wrapper {
+  padding: 28px 28px 0 28px;
+  margin-bottom: 20px;
+}
+
+.esp-service-icon {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, #F8F3EA 0%, #ffffff 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  line-height: 1;
+  border: 2px solid rgba(68, 106, 59, 0.1);
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(68, 106, 59, 0.06);
+}
+
+.esp-service-card:hover .esp-service-icon {
+  transform: scale(1.08);
+  border-color: #DB9598;
+  box-shadow: 0 6px 20px rgba(219, 149, 152, 0.2);
+}
+
+/* Card Content */
+.esp-card-content {
+  padding: 0 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Service Title */
+.esp-card-content h3 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #446A3B;
+  margin: 0 0 14px 0;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+/* Service Description */
+.esp-card-content p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #446A3B;
+  line-height: 1.65;
+  margin: 0 0 24px 0;
+  flex-grow: 1;
+  opacity: 0.92;
+}
+
+/* Enhanced Service Link */
+.esp-service-link {
+  font-family: 'DM Sans', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #446A3B;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  min-height: 44px;
+  padding: 8px 0;
+}
+
+.esp-service-link svg {
+  transition: transform 0.3s ease;
+}
+
+.esp-service-link:hover {
+  color: #DB9598;
+  gap: 12px;
+}
+
+.esp-service-link:hover svg {
+  transform: translateX(4px);
+}
+
+/* Coming Soon Badge - Enhanced */
+.esp-service-coming-soon {
+  opacity: 0.92;
+}
+
+.esp-coming-soon-badge {
+  font-family: 'DM Sans', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #A4BECF 0%, #8FA8BA 100%);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: auto;
+  box-shadow: 0 2px 8px rgba(164, 190, 207, 0.3);
+}
+
+.esp-coming-soon-badge svg {
+  opacity: 0.9;
+}
+
+/* Enhanced CTA Section */
+.esp-services-cta {
+  background: linear-gradient(135deg, #446A3B 0%, #365330 100%);
+  border-radius: 20px;
+  margin-top: 40px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(68, 106, 59, 0.2);
+}
+
+.esp-services-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(219, 149, 152, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.esp-cta-content {
+  text-align: center;
+  padding: 50px 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.esp-cta-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1;
+  opacity: 0.95;
+}
+
+.esp-cta-content h3 {
+  font-family: 'LostaMasta', 'DM Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #F8F3EA;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.esp-cta-content p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #F8F3EA;
+  line-height: 1.7;
+  margin: 0 0 32px 0;
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Enhanced CTA Button */
+.esp-cta-button {
+  font-family: 'DM Sans', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #F8F3EA;
+  color: #446A3B;
+  padding: 16px 36px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  min-height: 52px;
+  box-shadow: 0 4px 16px rgba(248, 243, 234, 0.3);
+}
+
+.esp-cta-button svg {
+  transition: transform 0.3s ease;
+}
+
+.esp-cta-button:hover {
+  background: #DB9598;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(219, 149, 152, 0.4);
+  gap: 14px;
+}
+
+.esp-cta-button:hover svg {
+  transform: translateX(4px);
+}
+
+/* ============================================
+   TABLET - 2 Columns (600px+)
+   ============================================ */
+@media (min-width: 600px) {
+  .esp-services-container {
+    padding: 60px 30px;
+  }
+
+  .esp-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  
+  .esp-services-header h2 {
+    font-size: 40px;
+  }
+  
+  .esp-services-subtitle {
+    font-size: 18px;
+  }
+
+  .esp-card-content h3 {
+    font-size: 23px;
+  }
+}
+
+/* ============================================
+   DESKTOP - 3 Columns (900px+)
+   ============================================ */
+@media (min-width: 900px) {
+  .esp-services-container {
+    padding: 80px 40px;
+  }
+  
+  .esp-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  
+  .esp-services-header {
+    margin-bottom: 70px;
+  }
+
+  .esp-services-header h2 {
+    font-size: 48px;
+  }
+
+  .esp-service-icon-wrapper {
+    padding: 32px 32px 0 32px;
+  }
+
+  .esp-card-content {
+    padding: 0 32px 32px 32px;
+  }
+
+  .esp-card-content h3 {
+    font-size: 24px;
+  }
+
+  .esp-cta-content {
+    padding: 60px 40px;
+  }
+
+  .esp-cta-content h3 {
+    font-size: 32px;
+  }
+
+  .esp-cta-content p {
+    font-size: 17px;
+  }
+}
+
+/* ============================================
+   LARGE DESKTOP (1200px+)
+   ============================================ */
+@media (min-width: 1200px) {
+  .esp-services-header h2 {
+    font-size: 52px;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY & PERFORMANCE
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .esp-service-card,
+  .esp-service-link,
+  .esp-cta-button,
+  .esp-service-icon,
+  .esp-card-accent {
+    transition: none;
+  }
+  
+  .esp-service-card:hover {
+    transform: none;
+  }
+
+  .esp-cta-button:hover {
+    transform: none;
+  }
+}
+
+/* Focus states for keyboard navigation */
+.esp-service-link:focus,
+.esp-cta-button:focus {
+  outline: 3px solid #DB9598;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Font Smoothing */
+.esp-services-container,
+.esp-services-container * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Print Styles */
+@media print {
+  .esp-service-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+</style>
