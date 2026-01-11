@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Foire aux questions sur les soins infirmiers à domicile d'Équipe Santé+. Réponses sur nos services, tarifs, zones desservies et procédures sur la Rive-Sud.">
+    <title>FAQ - Équipe Santé+ | Questions fréquentes</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ============================================
+           CUSTOM FONTS
+        ============================================ */
+        @font-face {
+            font-family: 'LostaMasta';
+            src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'LostaMasta';
+            src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ============================================
+           GLOBAL STYLES
+        ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #446A3B;
+            background-color: #F8F3EA;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ============================================
+           HERO SECTION
+        ============================================ */
+        .hero {
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15) 0%, #F8F3EA 100%);
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(219, 149, 152, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(219, 149, 152, 0.15);
+            color: #DB9598;
+            padding: 10px 20px;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+            border: 1px solid rgba(219, 149, 152, 0.3);
+        }
+
+        .hero h1 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(36px, 5vw, 56px);
+            line-height: 1.2;
+            color: #DB9598;
+            margin-bottom: 20px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.92;
+        }
+
+        /* ============================================
+           QUICK LINKS SECTION
+        ============================================ */
+        .quick-links {
+            background: #ffffff;
+            padding: 60px 0;
+        }
+
+        .quick-links-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .quick-link-item {
+            background: #F8F3EA;
+            border-radius: 12px;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            color: #446A3B;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .quick-link-item:hover {
+            border-color: #DB9598;
+            transform: translateX(4px);
+            background: #ffffff;
+        }
+
+        .quick-link-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15), rgba(164, 190, 207, 0.15));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .quick-link-text {
+            flex: 1;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .quick-link-arrow {
+            color: #DB9598;
+            transition: transform 0.3s ease;
+        }
+
+        .quick-link-item:hover .quick-link-arrow {
+            transform: translateX(4px);
+        }
+
+        /* ============================================
+           FAQ CATEGORIES
+        ============================================ */
+        .faq-section {
+            background: #F8F3EA;
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .section-header h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 400;
+            color: #DB9598;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-header p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.92;
+        }
+
+        .faq-category {
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+
+        .faq-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .category-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15), rgba(164, 190, 207, 0.15));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border: 2px solid rgba(219, 149, 152, 0.2);
+            flex-shrink: 0;
+        }
+
+        .category-header h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 28px;
+            color: #446A3B;
+            font-weight: 400;
+        }
+
+        /* FAQ Items */
+        .faq-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.06);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 8px 24px rgba(68, 106, 59, 0.12);
+            border-color: #DB9598;
+        }
+
+        .faq-question-btn {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 24px 28px;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question-btn:hover {
+            background: rgba(219, 149, 152, 0.05);
+        }
+
+        .faq-question {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 20px;
+            color: #446A3B;
+            font-weight: 400;
+            flex: 1;
+        }
+
+        .faq-item.active .faq-question {
+            color: #446A3B;
+        }
+
+        .faq-toggle {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: rgba(219, 149, 152, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #DB9598;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            background: #DB9598;
+            color: #ffffff;
+            transform: rotate(45deg);
+        }
+
+        .faq-item.active .faq-question-btn {
+            background: rgba(219, 149, 152, 0.08);
+        }
+
+        .faq-answer {
+            padding: 0 28px 24px 28px;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.9;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* ============================================
+           STILL HAVE QUESTIONS
+        ============================================ */
+        .contact-section {
+            background: #ffffff;
+            padding: 80px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: #F8F3EA;
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            gap: 24px;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.06);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(68, 106, 59, 0.12);
+            border-color: #DB9598;
+        }
+
+        .contact-icon {
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15), rgba(164, 190, 207, 0.15));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(219, 149, 152, 0.2);
+        }
+
+        .contact-icon svg {
+            color: #DB9598;
+        }
+
+        .contact-content h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 22px;
+            color: #446A3B;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .contact-content p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.9;
+            margin-bottom: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background: #DB9598;
+            color: #ffffff;
+        }
+
+        .btn:hover {
+            background: #c77f83;
+            transform: translateY(-2px);
+        }
+
+        .btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover svg {
+            transform: translateX(4px);
+        }
+
+        /* ============================================
+           CTA SECTION
+        ============================================ */
+        .cta-section {
+            background: linear-gradient(135deg, #446A3B 0%, #365330 100%);
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(219, 149, 152, 0.15) 0%, transparent 70%);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-section h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(28px, 4vw, 42px);
+            color: #F8F3EA;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .cta-section p {
+            font-size: 17px;
+            margin-bottom: 32px;
+            opacity: 0.95;
+            color: #F8F3EA;
+            line-height: 1.7;
+        }
+
+        .btn-white {
+            background: #F8F3EA;
+            color: #446A3B;
+            box-shadow: 0 4px 16px rgba(248, 243, 234, 0.3);
+            padding: 16px 32px;
+            font-size: 16px;
+        }
+
+        .btn-white:hover {
+            background: #DB9598;
+            color: #ffffff;
+            box-shadow: 0 8px 24px rgba(219, 149, 152, 0.4);
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+        ============================================ */
+        @media (min-width: 600px) {
+            .quick-links-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0 40px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-icon {
+                margin: 0 auto;
+            }
+        }
+
+        /* ============================================
+           ACCESSIBILITY
+        ============================================ */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .faq-question-btn:focus {
+            outline: 3px solid #DB9598;
+            outline-offset: 2px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #446A3B;
+            color: #ffffff;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="main-content">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M10 7V10M10 13H10.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Réponses à vos questions
+                </div>
+                <h1>Foire aux questions</h1>
+                <p class="hero-subtitle">
+                    Trouvez rapidement les réponses à vos questions sur nos services de soins infirmiers à domicile. 
+                    Si vous ne trouvez pas ce que vous cherchez, n'hésitez pas à nous contacter.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="quick-links-grid">
+                <a href="#general" class="quick-link-item">
+                    <div class="quick-link-icon">🏠</div>
+                    <span class="quick-link-text">Questions générales</span>
+                    <span class="quick-link-arrow">→</span>
+                </a>
+                <a href="#services" class="quick-link-item">
+                    <div class="quick-link-icon">💉</div>
+                    <span class="quick-link-text">Services et soins</span>
+                    <span class="quick-link-arrow">→</span>
+                </a>
+                <a href="#paiement" class="quick-link-item">
+                    <div class="quick-link-icon">💳</div>
+                    <span class="quick-link-text">Paiement et assurances</span>
+                    <span class="quick-link-arrow">→</span>
+                </a>
+                <a href="#preparation" class="quick-link-item">
+                    <div class="quick-link-icon">📋</div>
+                    <span class="quick-link-text">Préparation et rendez-vous</span>
+                    <span class="quick-link-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ CATEGORIES -->
+    <section class="faq-section">
+        <div class="container">
+            <!-- GENERAL -->
+            <div class="faq-category" id="general">
+                <div class="category-header">
+                    <div class="category-icon">🏠</div>
+                    <h3>Questions générales</h3>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question-btn" onclick="toggleFaq(this)">
+                            <span class="faq-question">Quelles villes desservez-vous ?</span>
+                            <div class="faq-toggle">+</div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous desservons la Rive-Sud de Montréal, incluant <strong>Saint-Amable, Varennes, Boucherville, Sainte-Julie, Saint-Bruno, St-Hubert, Greenfield Park, Brossard, Belœil, St-Basile, Saint-Lambert, Longueuil, Carignan, Chambly et La Prairie</strong>. Nous prévoyons aussi d'étendre nos services à St-Jean, Contrecœur, Sorel et les environs.</p>
+                            <p>Si vous n'êtes pas certain que nous desservons votre ville, n'hésitez pas à nous contacter.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question-btn" onclick="toggleFaq(this)">
+                            <span class="faq-question">Quelles sont vos heures d'ouverture ?</span>
+                            <div class="faq-toggle">+</div>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Prélèvements :</strong> de 6h à 11h</p>
+                            <p><strong>Autres soins :</strong> de 8h à 16h</p>
+                            <p><strong>Rendez-vous après 16h :</strong> Disponibles sur demande (nous contacter)</p>
+                            <p><strong>Fin de semaine :</strong> de 7h à 12h</p>
+                            <p><em>Note : Des frais s'appliquent pour les plages horaires après 16h la semaine, la fin de semaine et les jours fériés.</em></p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question-btn" onclick="toggleFaq(this)">
+                            <span class="faq-question">Proposez-vous des soins dans d'autres langues que le français ?</span>
+                            <div class="faq-toggle">+</div>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Oui, tout à fait.</strong> Nos soins sont offerts en <strong>français et en anglais</strong>. Certains membres de notre équipe peuvent également offrir des soins en <strong>portugais ou en espagnol</strong>, selon leur disponibilité. N'hésitez pas à nous en faire part lors de la prise de rendez-vous.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="faq-category" id="services">
+                <div class="category-header">
+                    <div class="category-icon">💉</div>
+                    <h3>Services et soins</h3>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question-btn" onclick="toggleFaq(this)">
+                            <span class="faq-question">Quelle est la procédure pour la prise de rendez-vous de prélèvement ?</span>
+                            <div class="faq-toggle">+</div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Prenez une photo de votre prescription et envoyez-la à l'adresse courriel <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b7ded9d1d8c4f7d2c6c2dec7d2c4d6d9c3d2c7dbc2c499d4d6">[email&#160;protected]</a></strong>, en incluant votre numéro de téléphone. Nous vous recontacterons la journée même pour fixer votre rendez-vous.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question-btn" onclick="toggleFaq(this)">
+                            <span class="faq-question">Quels sont les requis pour le service de retrait d'agrafes et de sutures ?</span>
+                            <div class="faq-toggle">+</div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Une prescription est idéale, mais si vous ne l'avez pas, ce n'est pas un problème. Selon ses compétences professionnelles, <strong>l'infirmière peut évaluer la plaie et déterminer si le retrait des agrafes ou des sutures est approprié</strong>, en se basant sur son état et son évolution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAIEMENT -->
+            <div class="faq-category" id="paiement">
+                <div class="category-header">
+                    <div class="category-icon">💳</div>
+                    <h3>Paiement et assurances</h3>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question-btn" onclick="toggleFaq(this)">
+                            <span class="faq-question">Quelles méthodes de paiement acceptez-vous ?</span>
+                            <div class="faq-toggle">+</div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous acceptons plusieurs méthodes de paiement pour votre commodité :</p>
+                            <ul style="margin-left: 20px; margin-top: 12px;">
+                                <li>Argent comptant</li>
+                                <li>Cartes Débit</li>
+                                <li>Visa et Mastercard via terminal</li>
+                                <li>Dépôts directs via l'adresse courriel <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="83eaede5ecf0c3e6f2f6eaf3e6f0e2edf7e6f3eff6f0ade0e2">[email&#160;protected]</a></strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question-btn" onclick="toggleFaq(this)">
+                            <span class="faq-question">Est-ce que vous êtes couverts par les assurances ?</span>
+                            <div class="faq-toggle">+</div>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Plusieurs assurances privées remboursent en tout ou en partie les soins infirmiers à domicile</strong>, selon les modalités de votre contrat. Il vous revient de vérifier les conditions de couverture directement auprès de votre assureur.</p>
+                            <p>Nous vous fournissons un reçu détaillé que vous pouvez soumettre à votre compagnie d'assurance pour remboursement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PREPARATION -->
+            <div class="faq-category" id="preparation">
+                <div class="category-header">
+                    <div class="category-icon">📋</div>
+                    <h3>Préparation et rendez-vous</h3>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question-btn" onclick="toggleFaq(this)">
+                            <span class="faq-question">Comment se préparer à la visite d'une de nos infirmières ?</span>
+                            <div class="faq-toggle">+</div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Pour assurer le bon déroulement de votre soin, voici ce que nous recommandons :</p>
+                            <ul style="margin-left: 20px; margin-top: 12px;">
+                                <li><strong>Espace propre et accessible</strong> pour que l'infirmière puisse travailler confortablement</li>
+                                <li><strong>Carte d'assurance maladie</strong> à portée de main</li>
+                                <li><strong>Médicaments sortis</strong> si applicable au soin</li>
+                                <li><strong>Documents médicaux pertinents</strong> (ordonnances, rapports, etc.)</li>
+                                <li><strong>Vêtements adaptés</strong> au soin à recevoir (par exemple, un t-shirt pour un prélèvement sanguin)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT OPTIONS -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vous avez encore des questions ?</h2>
+                <p>Notre équipe est là pour vous aider et répondre à toutes vos interrogations</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26 20V24C26 24.5304 25.7893 25.0391 25.4142 25.4142C25.0391 25.7893 24.5304 26 24 26C11.2975 26 1 15.7025 1 3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H7C7.53043 1 8.03914 1.21071 8.41421 1.58579C8.78929 1.96086 9 2.46957 9 3C9 4.25 9.2 5.45 9.57 6.57C9.66 6.85 9.59 7.16 9.38 7.38L7.5 9.25C9.93 14.11 13.89 18.07 18.75 20.5L20.62 18.62C20.84 18.41 21.15 18.34 21.43 18.43C22.55 18.8 23.75 19 25 19C25.5304 19 26.0391 19.2107 26.4142 19.5858C26.7893 19.9609 27 20.4696 27 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="contact-content">
+                        <h3>Appelez-nous</h3>
+                        <p>Parlez directement à notre équipe pour une réponse immédiate à vos questions.</p>
+                        <a href="tel:+15799579690" class="btn">
+                            <span>(579) 957-9690</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H28C29.1 6 30 6.9 30 8V24C30 25.1 29.1 26 28 26H4C2.9 26 2 25.1 2 24V8C2 6.9 2.9 6 4 6Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M30 8L16 17L2 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="contact-content">
+                        <h3>Écrivez-nous</h3>
+                        <p>Envoyez-nous vos questions par courriel et recevez une réponse détaillée sous 24h.</p>
+                        <a href="https://equipesanteplus.ca/contact/" class="btn">
+                            <span>Formulaire de contact</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à prendre rendez-vous ?</h2>
+                <p>
+                    Ne laissez pas vos questions vous retenir. Contactez-nous dès maintenant 
+                    et notre équipe se fera un plaisir de vous accompagner.
+                </p>
+                <a href="https://equipesanteplus.ca/rendez-vous/" class="btn btn-white">
+                    <span>Prendre rendez-vous en ligne</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 4L14 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for FAQ Toggle -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function toggleFaq(button) {
+            const faqItem = button.closest('.faq-item');
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Open clicked item if it wasn't already open
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        // Smooth scroll for quick links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Schema.org for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelles villes desservez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous desservons la Rive-Sud de Montréal, incluant Saint-Amable, Varennes, Boucherville, Sainte-Julie, Saint-Bruno, St-Hubert, Greenfield Park, Brossard, Belœil, St-Basile, Saint-Lambert, Longueuil, Carignan, Chambly et La Prairie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelles méthodes de paiement acceptez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous acceptons l'argent comptant, les cartes Débits, Visa, Mastercard via terminal ainsi que les dépôts directs via courriel."
+          }
+        },
+        {
+          "@type": "Questi
