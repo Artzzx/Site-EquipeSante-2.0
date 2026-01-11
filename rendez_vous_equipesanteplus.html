@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prenez rendez-vous en ligne avec Équipe Santé+ pour vos soins infirmiers à domicile sur la Rive-Sud. Réservation rapide et sécurisée en quelques clics.">
+    <title>Prendre rendez-vous - Équipe Santé+ | Réservation en ligne</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ============================================
+           CUSTOM FONTS
+        ============================================ */
+        @font-face {
+            font-family: 'LostaMasta';
+            src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'LostaMasta';
+            src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ============================================
+           GLOBAL STYLES
+        ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #446A3B;
+            background-color: #F8F3EA;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ============================================
+           HERO SECTION
+        ============================================ */
+        .hero {
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15) 0%, #F8F3EA 100%);
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(219, 149, 152, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(219, 149, 152, 0.15);
+            color: #DB9598;
+            padding: 10px 20px;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+            border: 1px solid rgba(219, 149, 152, 0.3);
+        }
+
+        .hero h1 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(36px, 5vw, 56px);
+            line-height: 1.2;
+            color: #DB9598;
+            margin-bottom: 20px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.92;
+            margin-bottom: 40px;
+        }
+
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 400;
+            color: #446A3B;
+        }
+
+        .feature-item svg {
+            color: #DB9598;
+            flex-shrink: 0;
+        }
+
+        /* ============================================
+           STEPS SECTION
+        ============================================ */
+        .steps-section {
+            background: #ffffff;
+            padding: 80px 0 60px;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .section-header h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 400;
+            color: #DB9598;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-header p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.92;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .step-item {
+            background: #F8F3EA;
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            gap: 24px;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.06);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .step-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(68, 106, 59, 0.12);
+            border-color: #DB9598;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #DB9598, #c77f83);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            box-shadow: 0 4px 12px rgba(219, 149, 152, 0.3);
+        }
+
+        .step-content h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 22px;
+            color: #446A3B;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .step-content p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           BOOKING IFRAME SECTION
+        ============================================ */
+        .booking-section {
+            background: #F8F3EA;
+            padding: 80px 0;
+        }
+
+        .booking-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .booking-wrapper {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(68, 106, 59, 0.12);
+            border: 2px solid rgba(219, 149, 152, 0.2);
+        }
+
+        .booking-iframe-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .booking-iframe-container iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            display: block;
+        }
+
+        /* Loading state */
+        .iframe-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #446A3B;
+        }
+
+        .iframe-loading.hidden {
+            display: none;
+        }
+
+        /* ============================================
+           ADVANTAGES SECTION
+        ============================================ */
+        .advantages-section {
+            background: #ffffff;
+            padding: 80px 0;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .advantage-card {
+            background: #F8F3EA;
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            gap: 20px;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.06);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .advantage-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(68, 106, 59, 0.12);
+            border-color: #DB9598;
+        }
+
+        .advantage-icon {
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15), rgba(164, 190, 207, 0.15));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            border: 2px solid rgba(219, 149, 152, 0.2);
+        }
+
+        .advantage-content h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 20px;
+            color: #446A3B;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .advantage-content p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           FAQ SECTION
+        ============================================ */
+        .faq-section {
+            background: #F8F3EA;
+            padding: 80px 0;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.06);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+        }
+
+        .faq-question {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 20px;
+            color: #446A3B;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .faq-answer {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           CTA SECTION
+        ============================================ */
+        .cta-section {
+            background: linear-gradient(135deg, #446A3B 0%, #365330 100%);
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(219, 149, 152, 0.15) 0%, transparent 70%);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-section h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(28px, 4vw, 42px);
+            color: #F8F3EA;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .cta-section p {
+            font-size: 17px;
+            margin-bottom: 32px;
+            opacity: 0.95;
+            color: #F8F3EA;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            min-height: 52px;
+            justify-content: center;
+        }
+
+        .btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover svg {
+            transform: translateX(4px);
+        }
+
+        .btn-white {
+            background: #F8F3EA;
+            color: #446A3B;
+            box-shadow: 0 4px 16px rgba(248, 243, 234, 0.3);
+        }
+
+        .btn-white:hover {
+            background: #DB9598;
+            color: #ffffff;
+            box-shadow: 0 8px 24px rgba(219, 149, 152, 0.4);
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+        ============================================ */
+        @media (min-width: 600px) {
+            .advantages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0 40px;
+            }
+
+            .steps-section {
+                padding: 60px 0 40px;
+            }
+
+            .booking-section {
+                padding: 60px 0;
+            }
+
+            .booking-wrapper {
+                padding: 24px;
+            }
+
+            .booking-iframe-container iframe {
+                height: 600px;
+            }
+
+            .step-item,
+            .advantage-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .step-number,
+            .advantage-icon {
+                margin: 0 auto;
+            }
+
+            .feature-item {
+                flex-basis: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .booking-wrapper {
+                padding: 16px;
+                border-radius: 12px;
+            }
+
+            .booking-iframe-container iframe {
+                height: 500px;
+            }
+        }
+
+        /* ============================================
+           ACCESSIBILITY
+        ============================================ */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #446A3B;
+            color: #ffffff;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="main-content">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 3H3C1.89543 3 1 3.89543 1 5V15C1 16.1046 1.89543 17 3 17H17C18.1046 17 19 16.1046 19 15V5C19 3.89543 18.1046 3 17 3Z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M1 7H19M5 11H7M5 14H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Réservation en ligne sécurisée
+                </div>
+                <h1>Prenez rendez-vous en ligne</h1>
+                <p class="hero-subtitle">
+                    Réservez votre soin infirmier à domicile en quelques clics. Choisissez le service, 
+                    la date et l'heure qui vous conviennent. Simple, rapide et sécurisé.
+                </p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Disponibilités en temps réel</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Confirmation immédiate</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Plateforme sécurisée</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEPS SECTION -->
+    <section class="steps-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comment ça fonctionne</h2>
+                <p>Un processus simple en 4 étapes pour réserver votre soin infirmier</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Sélectionnez votre service</h3>
+                        <p>Choisissez le type de soin dont vous avez besoin parmi notre gamme complète de services infirmiers à domicile.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Choisissez date et heure</h3>
+                        <p>Consultez nos disponibilités en temps réel et sélectionnez le créneau qui vous convient le mieux.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Remplissez vos informations</h3>
+                        <p>Entrez vos coordonnées et toute information pertinente pour assurer un service personnalisé et sécuritaire.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Confirmez votre rendez-vous</h3>
+                        <p>Recevez une confirmation immédiate par courriel avec tous les détails de votre rendez-vous.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING IFRAME SECTION -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="section-header">
+                    <h2>Réservez votre rendez-vous</h2>
+                    <p>Utilisez notre plateforme de réservation sécurisée ci-dessous</p>
+                </div>
+
+                <div class="booking-wrapper">
+                    <div class="booking-iframe-container">
+                        <div class="iframe-loading" id="iframeLoading">
+                            <p>Chargement du système de réservation...</p>
+                        </div>
+                        <iframe 
+                            src="https://secure.medexa.com/onlineAppointmentInformation?APIKey=177F244AB18B426F900D7D4485BF8D54&flowColor=446a3b&backgroundColor=f8f3ea" 
+                            width="100%" 
+                            height="800" 
+                            frameborder="0"
+                            title="Système de prise de rendez-vous en ligne"
+                            onload="document.getElementById('iframeLoading').classList.add('hidden')"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVANTAGES SECTION -->
+    <section class="advantages-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Avantages de la réservation en ligne</h2>
+            </div>
+
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">⚡</div>
+                    <div class="advantage-content">
+                        <h3>Réservation instantanée</h3>
+                        <p>Plus besoin d'attendre un rappel. Réservez immédiatement votre créneau disponible 24h/24, 7j/7.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">📅</div>
+                    <div class="advantage-content">
+                        <h3>Visibilité totale</h3>
+                        <p>Consultez toutes les plages horaires disponibles et choisissez celle qui convient le mieux à votre emploi du temps.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">🔔</div>
+                    <div class="advantage-content">
+                        <h3>Rappels automatiques</h3>
+                        <p>Recevez des rappels par courriel avant votre rendez-vous pour ne jamais l'oublier.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">🔄</div>
+                    <div class="advantage-content">
+                        <h3>Gestion simplifiée</h3>
+                        <p>Modifiez ou annulez votre rendez-vous facilement en ligne si nécessaire.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions sur la prise de rendez-vous</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Est-ce que je reçois une confirmation ?</h3>
+                    <p class="faq-answer">Oui, vous recevrez immédiatement une confirmation par courriel avec tous les détails de votre rendez-vous et les instructions pour vous préparer.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Puis-je modifier mon rendez-vous ?</h3>
+                    <p class="faq-answer">Oui, vous pouvez modifier ou annuler votre rendez-vous en ligne ou en nous contactant directement. Nous demandons un préavis de 24 heures si possible.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Dois-je préparer quelque chose ?</h3>
+                    <p class="faq-answer">Selon le type de soin, vous pourriez avoir besoin d'une ordonnance médicale ou de documents spécifiques. Ces détails vous seront communiqués lors de la confirmation.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Et si je préfère appeler ?</h3>
+                    <p class="faq-answer">Aucun problème ! Vous pouvez également prendre rendez-vous par téléphone au (579) 957-9690. Notre équipe se fera un plaisir de vous aider.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Vous préférez parler à quelqu'un ?</h2>
+                <p>
+                    Notre équipe est disponible pour répondre à vos questions et prendre votre rendez-vous par téléphone. 
+                    Nous sommes là pour vous accompagner.
+                </p>
+                <a href="tel:+15799579690" class="btn btn-white">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 14V17C18 17.5523 17.5523 18 17 18C8.71573 18 2 11.2843 2 3C2 2.44772 2.44772 2 3 2H6C6.55228 2 7 2.44772 7 3C7 4.25 7.2 5.45 7.57 6.57C7.66 6.85 7.59 7.16 7.38 7.38L5.5 9.25C6.93 12.11 9.39 14.57 12.25 16L14.12 14.12C14.34 13.91 14.65 13.84 14.93 13.93C16.05 14.3 17.25 14.5 18.5 14.5C19.0523 14.5 19.5 14.9477 19.5 15.5V17C19.5 17.5523 19.0523 18 18.5 18H18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Appeler : (579) 957-9690</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema.org for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Équipe Santé+",
+      "description": "Prise de rendez-vous en ligne pour soins infirmiers à domicile",
+      "url": "https://equipesanteplus.ca/rendez-vous/",
+      "telephone": "+1-579-957-9690",
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://equipesanteplus.ca/rendez-vous/",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        }
+      }
+    }
+    </script>
+</body>
+</html>
