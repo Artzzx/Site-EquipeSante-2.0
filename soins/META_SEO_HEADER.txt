@@ -1,0 +1,192 @@
+<!--
+═══════════════════════════════════════════════════════════════
+INSTRUCTIONS SEO - À AJOUTER DANS WORDPRESS/ELEMENTOR
+═══════════════════════════════════════════════════════════════
+
+Ces balises META doivent être ajoutées dans le <head> de chaque page de service.
+Si vous utilisez Yoast SEO ou Rank Math, utilisez ces informations dans les champs appropriés.
+
+Pour chaque page de service ci-dessous, copiez les balises dans la section personnalisée du <head>.
+═══════════════════════════════════════════════════════════════
+-->
+
+<!-- ========== SERVICE: PRISE DE GLYCÉMIE ========== -->
+<meta name="description" content="Prise de glycémie à domicile Rive-Sud | Mesure du taux de sucre par infirmière à Longueuil, Brossard, Saint-Hubert. Suivi diabète Type 1 et 2. À partir de 50$.">
+<meta name="keywords" content="prise glycémie longueuil, mesure glycémie à domicile, test diabète rive-sud, glycémie capillaire brossard, suivi diabète infirmière, prise glucose domicile, diabète type 1 type 2, infirmière diabète longueuil">
+<title>Prise de Glycémie à Domicile Longueuil | Infirmière Diabète Rive-Sud 50$</title>
+
+<!-- Geo Tags -->
+<meta name="geo.region" content="CA-QC">
+<meta name="geo.placename" content="Longueuil">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://equipesanteplus.ca/soins/prise-glycemie/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://equipesanteplus.ca/soins/prise-glycemie/">
+<meta property="og:title" content="Prise de Glycémie à Domicile | Infirmière Diabète Longueuil">
+<meta property="og:description" content="Mesure professionnelle de la glycémie à domicile. Suivi diabète Type 1, Type 2, gestationnel. Infirmière à Longueuil, Brossard, Saint-Hubert. 50$.">
+<meta property="og:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
+<meta property="og:locale" content="fr_CA">
+
+<!-- Twitter Card -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Prise de Glycémie à Domicile Longueuil">
+<meta property="twitter:description" content="Mesure du taux de sucre à domicile par infirmière sur la Rive-Sud. Suivi diabète professionnel.">
+
+
+<!-- ========== SERVICE: PRISE DE TENSION ARTÉRIELLE ========== -->
+<meta name="description" content="Prise de tension artérielle à domicile Rive-Sud | Mesure de la pression par infirmière à Longueuil, Brossard, Saint-Hubert. Suivi hypertension. À partir de 50$.">
+<meta name="keywords" content="prise tension longueuil, mesure tension à domicile, pression artérielle rive-sud, hypertension infirmière brossard, mesure pression domicile, suivi tension artérielle, infirmière hypertension, prise TA longueuil">
+<title>Prise de Tension Artérielle Longueuil | Infirmière Hypertension Rive-Sud 50$</title>
+
+<!-- Geo Tags -->
+<meta name="geo.region" content="CA-QC">
+<meta name="geo.placename" content="Longueuil">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://equipesanteplus.ca/soins/prise-tension/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://equipesanteplus.ca/soins/prise-tension/">
+<meta property="og:title" content="Prise de Tension à Domicile | Infirmière Longueuil">
+<meta property="og:description" content="Mesure professionnelle de la pression artérielle à domicile. Suivi hypertension. Infirmière à Longueuil, Brossard, Saint-Hubert. 50$.">
+<meta property="og:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
+<meta property="og:locale" content="fr_CA">
+
+<!-- Twitter Card -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Prise de Tension Artérielle Longueuil">
+<meta property="twitter:description" content="Mesure de la pression artérielle à domicile par infirmière sur la Rive-Sud.">
+
+
+<!-- ========== SERVICE: LAVAGE D'OREILLE ========== -->
+<meta name="description" content="Lavage d'oreille à domicile Rive-Sud | Irrigation auriculaire par infirmière à Longueuil, Brossard, Saint-Hubert. Retrait bouchon de cérumen. 85$.">
+<meta name="keywords" content="lavage oreille longueuil, irrigation oreille à domicile, bouchon cérumen rive-sud, débouchage oreille infirmière, lavage oreille brossard, retrait cérumen domicile, infirmière lavage oreille, nettoyage oreille longueuil">
+<title>Lavage d'Oreille à Domicile Longueuil | Retrait Bouchon Cérumen 85$</title>
+
+<!-- Geo Tags -->
+<meta name="geo.region" content="CA-QC">
+<meta name="geo.placename" content="Longueuil">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://equipesanteplus.ca/soins/lavage-oreille/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://equipesanteplus.ca/soins/lavage-oreille/">
+<meta property="og:title" content="Lavage d'Oreille à Domicile | Infirmière Longueuil">
+<meta property="og:description" content="Irrigation auriculaire professionnelle à domicile. Retrait bouchon de cérumen. Infirmière à Longueuil, Brossard, Saint-Hubert. 85$.">
+<meta property="og:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
+<meta property="og:locale" content="fr_CA">
+
+<!-- Twitter Card -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Lavage d'Oreille Longueuil">
+<meta property="twitter:description" content="Irrigation auriculaire à domicile par infirmière sur la Rive-Sud. Retrait bouchon cérumen.">
+
+
+<!-- ========== SERVICE: ADMINISTRATION MÉDICAMENTS ========== -->
+<meta name="description" content="Administration médicaments à domicile Rive-Sud | Injection par infirmière à Longueuil, Brossard, Saint-Hubert. Insuline, anticoagulants, IM, SC. 60$.">
+<meta name="keywords" content="administration médicaments longueuil, injection à domicile, injection insuline rive-sud, infirmière injection brossard, administration médicament domicile, injection sous-cutanée, injection intramusculaire longueuil, médicament domicile">
+<title>Administration Médicaments Domicile Longueuil | Injection Insuline 60$</title>
+
+<!-- Geo Tags -->
+<meta name="geo.region" content="CA-QC">
+<meta name="geo.placename" content="Longueuil">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://equipesanteplus.ca/soins/administration-medicaments/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://equipesanteplus.ca/soins/administration-medicaments/">
+<meta property="og:title" content="Administration Médicaments à Domicile | Infirmière Longueuil">
+<meta property="og:description" content="Injections et administration de médicaments à domicile. Insuline, anticoagulants, IM, SC. Infirmière à Longueuil, Brossard. 60$.">
+<meta property="og:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
+<meta property="og:locale" content="fr_CA">
+
+<!-- Twitter Card -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Administration Médicaments Longueuil">
+<meta property="twitter:description" content="Injections à domicile par infirmière sur la Rive-Sud. Insuline, anticoagulants.">
+
+
+<!-- ========== SERVICE: SOINS POST-OPÉRATOIRES ========== -->
+<meta name="description" content="Soins post-opératoires à domicile Rive-Sud | Suivi après chirurgie par infirmière à Longueuil, Brossard, Saint-Hubert. Pansements, drains. 110$.">
+<meta name="keywords" content="soins post-opératoires longueuil, suivi chirurgie domicile, pansement à domicile, soins plaie rive-sud, infirmière post-op brossard, drain chirurgical, retrait points suture, suivi après opération">
+<title>Soins Post-Opératoires Domicile Longueuil | Suivi Chirurgie 110$</title>
+
+<!-- Geo Tags -->
+<meta name="geo.region" content="CA-QC">
+<meta name="geo.placename" content="Longueuil">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://equipesanteplus.ca/soins/soins-post-operatoires/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://equipesanteplus.ca/soins/soins-post-operatoires/">
+<meta property="og:title" content="Soins Post-Opératoires à Domicile | Infirmière Longueuil">
+<meta property="og:description" content="Suivi infirmier après chirurgie à domicile. Pansements, drains, surveillance. Infirmière à Longueuil, Brossard. 110$.">
+<meta property="og:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
+<meta property="og:locale" content="fr_CA">
+
+<!-- Twitter Card -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Soins Post-Opératoires Longueuil">
+<meta property="twitter:description" content="Suivi après chirurgie à domicile par infirmière sur la Rive-Sud.">
+
+
+<!-- ========== SERVICE: SOINS DE DRAIN ========== -->
+<meta name="description" content="Soins de drain chirurgical à domicile Rive-Sud | Retrait et vidange par infirmière à Longueuil, Brossard, Saint-Hubert. Drain Jackson, Hemovac. 110$.">
+<meta name="keywords" content="retrait drain longueuil, soins drain domicile, vidange drain rive-sud, drain chirurgical infirmière, drain jackson brossard, drain hemovac, retrait drain domicile, soins drain longueuil">
+<title>Soins de Drain Chirurgical Longueuil | Retrait Drain Domicile 110$</title>
+
+<!-- Geo Tags -->
+<meta name="geo.region" content="CA-QC">
+<meta name="geo.placename" content="Longueuil">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://equipesanteplus.ca/soins/soins-drain/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://equipesanteplus.ca/soins/soins-drain/">
+<meta property="og:title" content="Soins de Drain Chirurgical à Domicile | Infirmière Longueuil">
+<meta property="og:description" content="Retrait et vidange de drains chirurgicaux à domicile. Jackson, Hemovac. Infirmière à Longueuil, Brossard. 110$.">
+<meta property="og:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
+<meta property="og:locale" content="fr_CA">
+
+<!-- Twitter Card -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Soins de Drain Chirurgical Longueuil">
+<meta property="twitter:description" content="Retrait et vidange de drains à domicile par infirmière sur la Rive-Sud.">
+
+
+<!-- ========== SERVICE: ACCOMPAGNEMENT AÎNÉS ========== -->
+<meta name="description" content="Accompagnement aînés à domicile Rive-Sud | Aide personnes âgées par infirmière à Longueuil, Brossard, Saint-Hubert. Soins, compagnie. 70$/h.">
+<meta name="keywords" content="accompagnement aînés longueuil, aide personnes âgées domicile, soins aînés rive-sud, infirmière personnes âgées brossard, compagnie aînés, aide seniors domicile, soins personnes âgées longueuil, accompagnement seniors">
+<title>Accompagnement Aînés Domicile Longueuil | Aide Personnes Âgées 70$/h</title>
+
+<!-- Geo Tags -->
+<meta name="geo.region" content="CA-QC">
+<meta name="geo.placename" content="Longueuil">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://equipesanteplus.ca/soins/accompagnement-aines/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://equipesanteplus.ca/soins/accompagnement-aines/">
+<meta property="og:title" content="Accompagnement Aînés à Domicile | Infirmière Longueuil">
+<meta property="og:description" content="Aide et accompagnement des personnes âgées à domicile. Soins, compagnie, soutien. Infirmière à Longueuil, Brossard. 70$/h.">
+<meta property="og:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
+<meta property="og:locale" content="fr_CA">
+
+<!-- Twitter Card -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Accompagnement Aînés Longueuil">
+<meta property="twitter:description" content="Aide aux personnes âgées à domicile par infirmière sur la Rive-Sud.">
