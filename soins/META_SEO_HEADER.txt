@@ -164,29 +164,3 @@ Pour chaque page de service ci-dessous, copiez les balises dans la section perso
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="Soins de Drain Chirurgical Longueuil">
 <meta property="twitter:description" content="Retrait et vidange de drains à domicile par infirmière sur la Rive-Sud.">
-
-
-<!-- ========== SERVICE: ACCOMPAGNEMENT AÎNÉS ========== -->
-<meta name="description" content="Accompagnement aînés à domicile Rive-Sud | Aide personnes âgées par infirmière à Longueuil, Brossard, Saint-Hubert. Soins, compagnie. 70$/h.">
-<meta name="keywords" content="accompagnement aînés longueuil, aide personnes âgées domicile, soins aînés rive-sud, infirmière personnes âgées brossard, compagnie aînés, aide seniors domicile, soins personnes âgées longueuil, accompagnement seniors">
-<title>Accompagnement Aînés Domicile Longueuil | Aide Personnes Âgées 70$/h</title>
-
-<!-- Geo Tags -->
-<meta name="geo.region" content="CA-QC">
-<meta name="geo.placename" content="Longueuil">
-
-<!-- Canonical URL -->
-<link rel="canonical" href="https://equipesanteplus.ca/soins/accompagnement-aines/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://equipesanteplus.ca/soins/accompagnement-aines/">
-<meta property="og:title" content="Accompagnement Aînés à Domicile | Infirmière Longueuil">
-<meta property="og:description" content="Aide et accompagnement des personnes âgées à domicile. Soins, compagnie, soutien. Infirmière à Longueuil, Brossard. 70$/h.">
-<meta property="og:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
-<meta property="og:locale" content="fr_CA">
-
-<!-- Twitter Card -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Accompagnement Aînés Longueuil">
-<meta property="twitter:description" content="Aide aux personnes âgées à domicile par infirmière sur la Rive-Sud.">
