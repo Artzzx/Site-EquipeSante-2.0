@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soins de pieds infirmiers à domicile sur la Rive-Sud. Soins médicaux podologiques pour diabétiques, aînés et personnes à mobilité réduite. Par infirmières qualifiées.">
+    <title>Soins de pieds infirmiers à domicile - Équipe Santé+ | Soins médicaux</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ============================================
+           CUSTOM FONTS
+        ============================================ */
+        @font-face {
+            font-family: 'LostaMasta';
+            src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'LostaMasta';
+            src: url('https://equipesanteplus.ca/wp-content/uploads/2025/05/LostaMasta-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ============================================
+           GLOBAL STYLES
+        ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #446A3B;
+            background-color: #F8F3EA;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ============================================
+           HERO SECTION
+        ============================================ */
+        .hero {
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15) 0%, #F8F3EA 100%);
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(219, 149, 152, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(219, 149, 152, 0.15);
+            color: #DB9598;
+            padding: 10px 20px;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+            border: 1px solid rgba(219, 149, 152, 0.3);
+        }
+
+        .hero h1 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(36px, 5vw, 56px);
+            line-height: 1.2;
+            color: #DB9598;
+            margin-bottom: 20px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.92;
+            margin-bottom: 32px;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 400;
+            color: #446A3B;
+        }
+
+        .feature-item svg {
+            color: #DB9598;
+            flex-shrink: 0;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* ============================================
+           BUTTONS
+        ============================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            min-height: 52px;
+            justify-content: center;
+            border: 2px solid transparent;
+        }
+
+        .btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover svg {
+            transform: translateX(4px);
+        }
+
+        .btn-primary {
+            background: #DB9598;
+            color: #ffffff;
+            box-shadow: 0 4px 16px rgba(219, 149, 152, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #c77f83;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(219, 149, 152, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #446A3B;
+            border-color: #446A3B;
+        }
+
+        .btn-secondary:hover {
+            background: #446A3B;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           SECTION STYLES
+        ============================================ */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-white {
+            background: #ffffff;
+        }
+
+        .section-cream {
+            background: #F8F3EA;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .section-header h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 400;
+            color: #DB9598;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-header p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.92;
+        }
+
+        /* ============================================
+           DISTINCTION ALERT BOX
+        ============================================ */
+        .distinction-alert {
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.12), rgba(164, 190, 207, 0.12));
+            border-left: 6px solid #DB9598;
+            padding: 32px;
+            border-radius: 12px;
+            margin: 60px auto;
+            max-width: 900px;
+            box-shadow: 0 4px 20px rgba(68, 106, 59, 0.08);
+        }
+
+        .distinction-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .distinction-icon {
+            width: 56px;
+            height: 56px;
+            background: #DB9598;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(219, 149, 152, 0.3);
+        }
+
+        .distinction-header h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 28px;
+            color: #DB9598;
+            font-weight: 400;
+        }
+
+        .distinction-content {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #446A3B;
+        }
+
+        .distinction-content strong {
+            color: #DB9598;
+            font-weight: 600;
+        }
+
+        .distinction-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .distinction-item {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid rgba(219, 149, 152, 0.2);
+        }
+
+        .distinction-item h4 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 18px;
+            color: #446A3B;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .distinction-item p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ============================================
+           OVERVIEW SECTION
+        ============================================ */
+        .overview {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .overview-content {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .overview-content p {
+            margin-bottom: 20px;
+        }
+
+        .overview-stats {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: #F8F3EA;
+            padding: 28px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.06);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+        }
+
+        .stat-number {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 36px;
+            color: #DB9598;
+            font-weight: 400;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 15px;
+            color: #446A3B;
+            opacity: 0.9;
+        }
+
+        /* ============================================
+           TYPES GRID
+        ============================================ */
+        .types-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .type-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 2px 12px rgba(68, 106, 59, 0.08);
+            border: 1px solid rgba(68, 106, 59, 0.12);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .type-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #DB9598 0%, #A4BECF 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .type-card:hover::before {
+            opacity: 1;
+        }
+
+        .type-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(68, 106, 59, 0.15);
+            border-color: #DB9598;
+        }
+
+        .type-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .type-card h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 24px;
+            color: #446A3B;
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .type-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        .type-card ul {
+            margin: 12px 0 0 20px;
+            padding: 0;
+        }
+
+        .type-card li {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.9;
+            margin-bottom: 6px;
+        }
+
+        /* ============================================
+           WHO SHOULD SECTION
+        ============================================ */
+        .who-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .who-item {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            gap: 20px;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.06);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .who-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(68, 106, 59, 0.12);
+            border-color: #DB9598;
+        }
+
+        .who-icon {
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15), rgba(164, 190, 207, 0.15));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            border: 2px solid rgba(219, 149, 152, 0.2);
+        }
+
+        .who-content h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 20px;
+            color: #446A3B;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .who-content p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           PROCESS STEPS
+        ============================================ */
+        .process-steps {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            gap: 24px;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #DB9598, #c77f83);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            box-shadow: 0 4px 12px rgba(219, 149, 152, 0.3);
+        }
+
+        .step-content h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 22px;
+            color: #446A3B;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .step-content p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           BENEFITS GRID
+        ============================================ */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .benefit-card {
+            background: #F8F3EA;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.06);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(68, 106, 59, 0.12);
+            border-color: #DB9598;
+        }
+
+        .benefit-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, rgba(219, 149, 152, 0.15), rgba(164, 190, 207, 0.15));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(219, 149, 152, 0.2);
+        }
+
+        .benefit-card h3 {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 22px;
+            color: #446A3B;
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .benefit-card p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           FAQ SECTION
+        ============================================ */
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(68, 106, 59, 0.06);
+            border: 1px solid rgba(68, 106, 59, 0.1);
+        }
+
+        .faq-question {
+            font-family: 'LostaMasta', sans-serif;
+            font-size: 20px;
+            color: #446A3B;
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .faq-answer {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #446A3B;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* ============================================
+           CTA SECTION
+        ============================================ */
+        .cta-section {
+            background: linear-gradient(135deg, #446A3B 0%, #365330 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(219, 149, 152, 0.15) 0%, transparent 70%);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-section h2 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(32px, 4vw, 48px);
+            color: #F8F3EA;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            opacity: 0.95;
+            color: #F8F3EA;
+            line-height: 1.7;
+        }
+
+        .btn-white {
+            background: #F8F3EA;
+            color: #446A3B;
+            box-shadow: 0 4px 16px rgba(248, 243, 234, 0.3);
+        }
+
+        .btn-white:hover {
+            background: #DB9598;
+            color: #ffffff;
+            box-shadow: 0 8px 24px rgba(219, 149, 152, 0.4);
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+        ============================================ */
+        @media (min-width: 600px) {
+            .overview-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .distinction-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .overview-grid {
+                grid-template-columns: 2fr 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0 40px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .step,
+            .who-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .step-number,
+            .who-icon {
+                margin: 0 auto;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+        }
+
+        /* ============================================
+           ACCESSIBILITY
+        ============================================ */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .btn:focus {
+            outline: 3px solid #DB9598;
+            outline-offset: 4px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #446A3B;
+            color: #ffffff;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="main-content">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M6.5 10L9 12.5L13.5 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Soins médicaux certifiés OIIQ
+                </div>
+                <h1>Soins de pieds infirmiers à domicile</h1>
+                <p class="hero-subtitle">
+                    Des soins podologiques médicaux professionnels réalisés par une infirmière qualifiée, directement à votre domicile. 
+                    Confort, sécurité et prévention des complications pour vos pieds.
+                </p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Infirmière formée en podologie</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Soins médicaux spécialisés</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Idéal pour diabétiques</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="tel:+15799579690" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 14V17C18 17.5523 17.5523 18 17 18C8.71573 18 2 11.2843 2 3C2 2.44772 2.44772 2 3 2H6C6.55228 2 7 2.44772 7 3C7 4.25 7.2 5.45 7.57 6.57C7.66 6.85 7.59 7.16 7.38 7.38L5.5 9.25C6.93 12.11 9.39 14.57 12.25 16L14.12 14.12C14.34 13.91 14.65 13.84 14.93 13.93C16.05 14.3 17.25 14.5 18.5 14.5C19.0523 14.5 19.5 14.9477 19.5 15.5V17C19.5 17.5523 19.0523 18 18.5 18H18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Appeler pour rendez-vous</span>
+                    </a>
+                    <a href="https://equipesanteplus.ca/contact/" class="btn btn-secondary">
+                        <span>Nous contacter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISTINCTION ALERT -->
+    <div class="container">
+        <div class="distinction-alert">
+            <div class="distinction-header">
+                <div class="distinction-icon">⚕️</div>
+                <h3>Distinction importante</h3>
+            </div>
+            <div class="distinction-content">
+                <p style="font-size: 17px; margin-bottom: 20px;">
+                    <strong>Nos soins de pieds sont des soins MÉDICAUX réalisés par une infirmière qualifiée</strong>, 
+                    et non des soins esthétiques. Il existe une différence importante entre ces deux types de services :
+                </p>
+
+                <div class="distinction-grid">
+                    <div class="distinction-item">
+                        <h4>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: #DB9598;">
+                                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6.5 10L9 12.5L13.5 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Soins infirmiers (ce que nous offrons)
+                        </h4>
+                        <p>Soins <strong>médicaux</strong> effectués par une infirmière avec formation en podologie. Traitement des problèmes de santé des pieds (cors, ongles incarnés, plaies, diabète). Approche préventive et thérapeutique.</p>
+                    </div>
+
+                    <div class="distinction-item">
+                        <h4>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: #446A3B; opacity: 0.5;">
+                                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 10L10 14L14 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Soins esthétiques (spa/salon)
+                        </h4>
+                        <p>Soins de <strong>beauté</strong> et de confort (pédicure, vernis, relaxation). Effectués dans un salon ou spa. Ne traitent pas les problèmes médicaux. Non recommandés pour diabétiques.</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 16px; margin-top: 20px; font-weight: 500;">
+                    ✓ Nous sommes qualifiées pour traiter les pieds diabétiques et les conditions médicales<br>
+                    ✓ Nos soins suivent les protocoles d'hygiène et de sécurité de l'OIIQ<br>
+                    ✓ Nous effectuons une évaluation clinique complète à chaque visite
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- OVERVIEW SECTION -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="overview">
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h2 style="font-family: 'LostaMasta', sans-serif; font-size: 36px; color: #DB9598; margin-bottom: 20px;">Un service professionnel et sécuritaire</h2>
+                        <p>
+                            Nos soins de pieds à domicile sont réalisés par une <strong>infirmière certifiée avec une formation spécialisée en soins podologiques</strong>. 
+                            Nous traitons une variété de problèmes de pieds dans le respect des normes d'hygiène et de sécurité les plus strictes.
+                        </p>
+                        <p>
+                            Ce service est particulièrement important pour les <strong>personnes diabétiques, âgées ou à mobilité réduite</strong>, 
+                            qui nécessitent des soins médicaux professionnels plutôt que des soins esthétiques en salon.
+                        </p>
+                        <p>
+                            L'infirmière effectue une <strong>évaluation complète de vos pieds</strong>, traite les problèmes existants et vous conseille 
+                            sur les meilleures pratiques pour maintenir la santé de vos pieds et prévenir les complications.
+                        </p>
+                    </div>
+                    <div class="overview-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">OIIQ</span>
+                            <span class="stat-label">Certification professionnelle</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">À domicile</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">Médical</span>
+                            <span class="stat-label">Approche thérapeutique</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">Nous contacter</span>
+                            <span class="stat-label">Pour tarification</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TYPES DE SOINS -->
+    <section class="section section-cream">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soins offerts</h2>
+                <p>Une gamme complète de soins podologiques médicaux pour la santé de vos pieds</p>
+            </div>
+
+            <div class="types-grid">
+                <div class="type-card">
+                    <span class="type-icon">🦶</span>
+                    <h3>Soins de base</h3>
+                    <p>Soins généraux d'hygiène et de confort :</p>
+                    <ul>
+                        <li>Coupe et limage des ongles</li>
+                        <li>Traitement des ongles épaissis ou mycosés</li>
+                        <li>Soin des callosités et hyperkératose</li>
+                        <li>Hydratation et massage thérapeutique</li>
+                    </ul>
+                </div>
+
+                <div class="type-card">
+                    <span class="type-icon">⚕️</span>
+                    <h3>Traitement des problèmes</h3>
+                    <p>Soins spécialisés pour conditions médicales :</p>
+                    <ul>
+                        <li>Cors et durillons</li>
+                        <li>Ongles incarnés (onychocryptose)</li>
+                        <li>Crevasses et fissures</li>
+                        <li>Verrues plantaires</li>
+                        <li>Plaies et ulcères (pied diabétique)</li>
+                    </ul>
+                </div>
+
+                <div class="type-card">
+                    <span class="type-icon">🩺</span>
+                    <h3>Soins préventifs diabétiques</h3>
+                    <p>Surveillance et prévention pour diabétiques :</p>
+                    <ul>
+                        <li>Évaluation vasculaire et neurologique</li>
+                        <li>Examen des pieds complet</li>
+                        <li>Dépistage des zones à risque</li>
+                        <li>Éducation sur les soins quotidiens</li>
+                        <li>Prévention des complications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUI DEVRAIT CONSULTER -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Qui devrait consulter ?</h2>
+                <p>Ces soins sont particulièrement bénéfiques pour les personnes suivantes</p>
+            </div>
+
+            <div class="who-grid">
+                <div class="who-item">
+                    <div class="who-icon">🩺</div>
+                    <div class="who-content">
+                        <h3>Personnes diabétiques</h3>
+                        <p>Le diabète augmente les risques de complications aux pieds. Des soins médicaux réguliers par une infirmière sont essentiels pour prévenir les infections, ulcères et problèmes circulatoires.</p>
+                    </div>
+                </div>
+
+                <div class="who-item">
+                    <div class="who-icon">👴</div>
+                    <div class="who-content">
+                        <h3>Personnes âgées</h3>
+                        <p>Avec l'âge, les ongles s'épaississent et deviennent plus difficiles à couper. Les problèmes de circulation et de flexibilité rendent les soins professionnels nécessaires.</p>
+                    </div>
+                </div>
+
+                <div class="who-item">
+                    <div class="who-icon">🦽</div>
+                    <div class="who-content">
+                        <h3>Mobilité réduite</h3>
+                        <p>Si vous avez de la difficulté à vous pencher, vous déplacer ou atteindre vos pieds, nos soins à domicile vous permettent de recevoir des soins professionnels en toute sécurité.</p>
+                    </div>
+                </div>
+
+                <div class="who-item">
+                    <div class="who-icon">⚠️</div>
+                    <div class="who-content">
+                        <h3>Problèmes de pieds</h3>
+                        <p>Cors douloureux, ongles incarnés, crevasses, infections ou autres problèmes nécessitent une approche médicale pour un traitement efficace et sécuritaire.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESSUS -->
+    <section class="section section-cream">
+        <div class="container">
+            <div class="section-header">
+                <h2>Déroulement d'un soin</h2>
+                <p>Un processus structuré pour des soins de qualité et sécuritaires</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Évaluation initiale</h3>
+                        <p>L'infirmière examine vos pieds, évalue votre circulation, votre sensibilité et identifie les zones problématiques. Elle prend note de votre historique médical et de vos préoccupations.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Préparation et nettoyage</h3>
+                        <p>Bain de pieds avec désinfection complète. L'infirmière prépare le matériel stérile et s'assure que tout est conforme aux protocoles d'hygiène de l'OIIQ.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Soins thérapeutiques</h3>
+                        <p>Coupe et limage des ongles, traitement des callosités et cors, soin des crevasses, application de produits médicaux au besoin. Tous les soins sont effectués avec du matériel stérile.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Éducation et prévention</h3>
+                        <p>Conseils personnalisés sur l'entretien quotidien de vos pieds, recommandations de produits, signes d'alarme à surveiller et fréquence recommandée pour les soins futurs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BÉNÉFICES -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pourquoi choisir nos soins infirmiers</h2>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏥</div>
+                    <h3>Expertise médicale</h3>
+                    <p>Soins effectués par une infirmière avec formation spécialisée en podologie, capable de traiter les conditions médicales complexes.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏠</div>
+                    <h3>Confort à domicile</h3>
+                    <p>Restez dans votre environnement familier sans avoir à vous déplacer dans une clinique ou un salon.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Sécurité maximale</h3>
+                    <p>Respect strict des protocoles d'hygiène et de stérilisation selon les normes de l'OIIQ, matériel médical approprié.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💉</div>
+                    <h3>Soins diabétiques</h3>
+                    <p>Expertise spécifique pour les pieds diabétiques avec surveillance des complications et prévention des infections.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <h3>Approche globale</h3>
+                    <p>Évaluation complète, traitement et éducation pour une santé optimale de vos pieds à long terme.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Prévention</h3>
+                    <p>Dépistage précoce des problèmes et conseils personnalisés pour éviter les complications futures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-cream">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions fréquentes</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">Quelle est la différence avec une pédicure esthétique ?</h3>
+                    <p class="faq-answer">Nos soins sont des soins <strong>médicaux</strong> effectués par une infirmière qualifiée, visant à traiter et prévenir les problèmes de santé des pieds. Une pédicure esthétique est un soin de beauté effectué en salon qui ne traite pas les conditions médicales et n'est pas recommandée pour les diabétiques.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Combien coûtent les soins de pieds ?</h3>
+                    <p class="faq-answer">Les tarifs varient selon la complexité des soins nécessaires. Contactez-nous au (579) 957-9690 pour discuter de vos besoins et obtenir un prix personnalisé.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">À quelle fréquence devrais-je recevoir des soins ?</h3>
+                    <p class="faq-answer">Cela dépend de votre condition. Pour les personnes diabétiques ou avec problèmes circulatoires, des soins toutes les 6-8 semaines sont recommandés. Pour l'entretien général, tous les 2-3 mois suffisent. L'infirmière évaluera vos besoins lors de la première visite.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Puis-je recevoir ces soins si je suis diabétique ?</h3>
+                    <p class="faq-answer">Absolument ! Nos soins sont justement recommandés pour les personnes diabétiques. L'infirmière est formée pour évaluer la circulation, la sensibilité et détecter les signes de complications. C'est plus sécuritaire qu'un salon esthétique.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Combien de temps dure un soin ?</h3>
+                    <p class="faq-answer">Un soin complet prend environ 45-60 minutes, incluant l'évaluation, le traitement et l'éducation. Le temps peut varier selon la complexité des soins nécessaires.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Comment prendre rendez-vous ?</h3>
+                    <p class="faq-answer">Appelez-nous directement au (579) 957-9690. La prise de rendez-vous pour ce service se fait uniquement par téléphone afin d'évaluer vos besoins spécifiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prenez soin de vos pieds avec une professionnelle</h2>
+                <p>
+                    Des soins médicaux de qualité, dans le confort de votre domicile. 
+                    Appelez-nous dès maintenant pour discuter de vos besoins et planifier votre première visite.
+                </p>
+                <a href="tel:+15799579690" class="btn btn-white">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 14V17C18 17.5523 17.5523 18 17 18C8.71573 18 2 11.2843 2 3C2 2.44772 2.44772 2 3 2H6C6.55228 2 7 2.44772 7 3C7 4.25 7.2 5.45 7.57 6.57C7.66 6.85 7.59 7.16 7.38 7.38L5.5 9.25C6.93 12.11 9.39 14.57 12.25 16L14.12 14.12C14.34 13.91 14.65 13.84 14.93 13.93C16.05 14.3 17.25 14.5 18.5 14.5C19.0523 14.5 19.5 14.9477 19.5 15.5V17C19.5 17.5523 19.0523 18 18.5 18H18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Appeler maintenant : (579) 957-9690</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema.org for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Soins de pieds infirmiers à domicile",
+      "description": "Soins podologiques médicaux à domicile par infirmière qualifiée sur la Rive-Sud",
+      "procedureType": "Soins infirmiers podologiques",
+      "followup": "Selon évaluation de l'infirmière",
+      "bodyLocation": {
+        "@type": "BodyStructure",
+        "name": "Pieds"
+      },
+      "performer": {
+        "@type": "Nurse",
+        "name": "Équipe Santé+"
+      }
+    }
+    </script>
+</body>
+</html>
