@@ -205,10 +205,16 @@
 
         .steps-grid {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 32px;
             max-width: 900px;
             margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .step-item {
@@ -293,6 +299,34 @@
             height: 800px;
             border: none;
             display: block;
+        }
+
+        .booking-notice {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            background: rgba(219, 149, 152, 0.1);
+            border: 1px solid rgba(219, 149, 152, 0.4);
+            border-radius: 12px;
+            padding: 18px 22px;
+            margin-bottom: 24px;
+        }
+
+        .booking-notice svg {
+            flex-shrink: 0;
+            color: #DB9598;
+            margin-top: 2px;
+        }
+
+        .booking-notice p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #446A3B;
+            margin: 0;
+        }
+
+        .booking-notice strong {
+            font-weight: 600;
         }
 
         /* Loading state */
@@ -681,6 +715,13 @@
                 </div>
 
                 <div class="booking-wrapper">
+                    <div class="booking-notice">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M10 7V10M10 13H10.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <p><strong>Certains services nécessitent une évaluation téléphonique préalable</strong> et ne peuvent pas être réservés directement en ligne. Si vous ne trouvez pas le service souhaité ci-dessous, veuillez nous contacter par téléphone au <a href="tel:+15799579690" style="color: #DB9598; text-decoration: none; font-weight: 500;">(579) 957-9690</a> afin qu'un membre de notre équipe puisse vous orienter.</p>
+                    </div>
                     <div class="booking-iframe-container">
                         <div class="iframe-loading" id="iframeLoading">
                             <p>Chargement du système de réservation...</p>
@@ -769,25 +810,6 @@
                     <h3 class="faq-question">Et si je préfère appeler ?</h3>
                     <p class="faq-answer">Aucun problème ! Vous pouvez également prendre rendez-vous par téléphone au (579) 957-9690. Notre équipe se fera un plaisir de vous aider.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA SECTION -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Vous préférez parler à quelqu'un ?</h2>
-                <p>
-                    Notre équipe est disponible pour répondre à vos questions et prendre votre rendez-vous par téléphone. 
-                    Nous sommes là pour vous accompagner.
-                </p>
-                <a href="tel:+15799579690" class="btn btn-white">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 14V17C18 17.5523 17.5523 18 17 18C8.71573 18 2 11.2843 2 3C2 2.44772 2.44772 2 3 2H6C6.55228 2 7 2.44772 7 3C7 4.25 7.2 5.45 7.57 6.57C7.66 6.85 7.59 7.16 7.38 7.38L5.5 9.25C6.93 12.11 9.39 14.57 12.25 16L14.12 14.12C14.34 13.91 14.65 13.84 14.93 13.93C16.05 14.3 17.25 14.5 18.5 14.5C19.0523 14.5 19.5 14.9477 19.5 15.5V17C19.5 17.5523 19.0523 18 18.5 18H18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>Appeler : (579) 957-9690</span>
-                </a>
             </div>
         </div>
     </section>
