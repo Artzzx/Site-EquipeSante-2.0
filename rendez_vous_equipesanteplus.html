@@ -1,41 +1,13 @@
-<!DOCTYPE html>
-<html lang="fr-CA">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rendez-vous infirmière à domicile Rive-Sud | Réservation en ligne Longueuil Brossard Saint-Hubert. Prélèvements sanguins, soins pieds, administration médicaments. Disponibilité 7j/7.">
-    <meta name="keywords" content="rendez-vous infirmière longueuil, réservation infirmière brossard, prise rendez-vous soins infirmiers, booking infirmière à domicile, rendez-vous prélèvement sanguin, rdv infirmière rive-sud, réservation en ligne soins">
-    <title>Rendez-vous Infirmière à Domicile | Réservation Longueuil Brossard</title>
+<!-- SCHEMA CHOISI : MedicalBusiness + ReserveAction + LocalBusiness
+     RAISON : Page de prise de rendez-vous en ligne avec iframe de réservation — ReserveAction permet à Google d'afficher le bouton "Réserver" directement dans les résultats
+     SOURCE : https://schema.org/ReserveAction -->
 
-    <!-- Geo Tags -->
-    <meta name="geo.region" content="CA-QC">
-    <meta name="geo.placename" content="Longueuil">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://equipesanteplus.ca/rendez-vous/">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://equipesanteplus.ca/rendez-vous/">
-    <meta property="og:title" content="Rendez-vous Infirmière à Domicile | Équipe Santé+ Longueuil">
-    <meta property="og:description" content="Réservation en ligne pour infirmière à domicile Longueuil, Brossard, Saint-Hubert. Prélèvements sanguins, soins de pieds. Disponibilité 7j/7.">
-    <meta property="og:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
-    <meta property="og:locale" content="fr_CA">
-    <meta property="og:site_name" content="Équipe Santé+">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://equipesanteplus.ca/rendez-vous/">
-    <meta property="twitter:title" content="Rendez-vous Infirmière à Domicile Rive-Sud">
-    <meta property="twitter:description" content="Réservation en ligne pour infirmière à domicile Longueuil, Brossard, Saint-Hubert.">
-    <meta property="twitter:image" content="https://equipesanteplus.ca/wp-content/uploads/2025/05/IMG_5030.webp">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
+
+<style>
         /* ============================================
            CUSTOM FONTS
         ============================================ */
@@ -616,17 +588,16 @@
             top: 0;
         }
     </style>
-</head>
-<body>
+
     <!-- Skip to content -->
     <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
     <!-- HERO SECTION -->
-    <section class="hero" id="main-content">
+    <section class="hero" lang="fr-CA" id="main-content">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17 3H3C1.89543 3 1 3.89543 1 5V15C1 16.1046 1.89543 17 3 17H17C18.1046 17 19 16.1046 19 15V5C19 3.89543 18.1046 3 17 3Z" stroke="currentColor" stroke-width="1.5"/>
                         <path d="M1 7H19M5 11H7M5 14H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                     </svg>
@@ -639,19 +610,19 @@
                 </p>
                 <div class="hero-features">
                     <div class="feature-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span>Disponibilités en temps réel</span>
                     </div>
                     <div class="feature-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span>Confirmation immédiate</span>
                     </div>
                     <div class="feature-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span>Plateforme sécurisée</span>
@@ -814,11 +785,19 @@
         </div>
     </section>
 
+    <!-- Liens internes -->
+    <div style="padding: 12px 0 24px; text-align: center; font-size: 14px; color: #446A3B; opacity: 0.8;">
+        Vous hésitez ?
+        <a href="https://equipesanteplus.ca/prix/" style="color: #DB9598; text-decoration: underline;">Consulter nos tarifs</a> —
+        <a href="https://equipesanteplus.ca/faq/" style="color: #DB9598; text-decoration: underline;">Lire la FAQ</a> —
+        <a href="https://equipesanteplus.ca/contact/" style="color: #DB9598; text-decoration: underline;">Nous contacter</a>
+    </div>
+
     <!-- Schema.org for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MedicalBusiness",
+      "@type": ["MedicalBusiness", "LocalBusiness"],
       "name": "Équipe Santé+",
       "description": "Prise de rendez-vous en ligne pour soins infirmiers à domicile",
       "url": "https://equipesanteplus.ca/rendez-vous/",
@@ -836,5 +815,3 @@
       }
     }
     </script>
-</body>
-</html>
