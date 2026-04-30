@@ -1,8 +1,8 @@
 <!-- Équipe Santé+ - Service Detail: Soins de Drain Chirurgical -->
-<div class="esp-service-detail">
-  
+<div class="esp-service-detail" lang="fr-CA">
+
   <!-- Hero Section -->
-  <section class="esp-hero">
+  <section class="esp-hero" itemscope itemtype="https://schema.org/MedicalProcedure">
     <div class="esp-hero-content">
       <div class="esp-hero-badge">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +42,7 @@
             <path d="M7 4L14 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="tel:+14505551234" class="esp-btn-secondary">
+        <a href="tel:+15799579690" class="esp-btn-secondary">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18 14V17C18 17.5523 17.5523 18 17 18C8.71573 18 2 11.2843 2 3C2 2.44772 2.44772 2 3 2H6C6.55228 2 7 2.44772 7 3C7 4.25 7.2 5.45 7.57 6.57C7.66 6.85 7.59 7.16 7.38 7.38L5.5 9.25C6.93 12.11 9.39 14.57 12.25 16L14.12 14.12C14.34 13.91 14.65 13.84 14.93 13.93C16.05 14.3 17.25 14.5 18.5 14.5C19.0523 14.5 19.5 14.9477 19.5 15.5V17C19.5 17.5523 19.0523 18 18.5 18H18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -611,7 +611,7 @@
           <a href="https://equipesanteplus.ca/contact/" class="esp-btn-cta-primary">
             <span>Prendre rendez-vous</span>
           </a>
-          <a href="tel:+14505551234" class="esp-btn-cta-secondary">
+          <a href="tel:+15799579690" class="esp-btn-cta-secondary">
             Appeler pour information
           </a>
         </div>
@@ -648,6 +648,51 @@
       </div>
     </div>
   </section>
+
+  <!-- Schema.org JSON-LD : MedicalProcedure + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalProcedure",
+        "name": "Soins de drain chirurgical à domicile",
+        "alternateName": ["Retrait de drain Jackson-Pratt", "Vidange de drain Hemovac"],
+        "description": "Suivi, vidange, mesure du drainage et retrait de drains chirurgicaux (Jackson-Pratt, Hémovac, Blake, Penrose) à domicile par une infirmière sur la Rive-Sud de Montréal.",
+        "procedureType": "https://schema.org/TherapeuticProcedure",
+        "bodyLocation": "Site chirurgical",
+        "howPerformed": "Inspection du site d'insertion, changement de pansement stérile, vidange du réservoir, mesure du drainage et réactivation de l'aspiration sous technique stérile.",
+        "preparation": "Avoir l'ordonnance ou les consignes de congé du chirurgien à portée de main.",
+        "url": "https://equipesanteplus.ca/soins-infirmier/soins-de-drain-jp/",
+        "inLanguage": "fr-CA",
+        "provider": {
+          "@type": "MedicalBusiness",
+          "name": "Équipe Santé+",
+          "telephone": "+1-579-957-9690",
+          "url": "https://equipesanteplus.ca/",
+          "areaServed": ["Longueuil", "Brossard", "Saint-Hubert", "Boucherville", "Saint-Lambert", "Greenfield Park", "Rive-Sud de Montréal", "Montérégie"]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Combien de temps vais-je garder mon drain?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Variable selon la chirurgie et votre production de liquide. Orthopédie: 1-5 jours. Mastectomie: 7-14 jours. Abdominoplastie: 7-14 jours. Thyroïdectomie: 1-2 jours. Le drain est retiré quand la production est <25-30 ml/24h pendant 2 jours consécutifs."}},
+          {"@type": "Question", "name": "Le retrait du drain est-il douloureux?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Non, la plupart des patients décrivent une sensation désagréable de 2-3 secondes (brûlure ou pression légère) mais rarement douloureux. Comparable au retrait rapide d'un pansement adhésif. Aucune anesthésie nécessaire."}},
+          {"@type": "Question", "name": "Puis-je vider mon drain moi-même entre les visites?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Oui, si vous êtes à l'aise et que votre infirmière vous a enseigné la technique. Cependant, le changement de pansement stérile nécessite généralement une infirmière."}},
+          {"@type": "Question", "name": "Que faire si mon drain se déconnecte ou tombe?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Ne paniquez pas et NE réinsérez JAMAIS le drain vous-même. Appliquez un pansement stérile compressif sur le site et contactez-nous ou votre chirurgien immédiatement."}},
+          {"@type": "Question", "name": "Mon réservoir ne reste pas comprimé, est-ce normal?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Non, cela indique une perte d'aspiration (fuite, tube déconnecté ou drain obstrué). L'infirmière vérifiera et résoudra le problème."}},
+          {"@type": "Question", "name": "Puis-je prendre une douche avec mon drain?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Oui, avec précautions. Protégez le site avec un pansement imperméable ou pellicule plastique. Évitez l'immersion (bain, piscine). Changez le pansement immédiatement après la douche."}}
+        ]
+      }
+    ]
+  }
+  </script>
 
 </div>
 

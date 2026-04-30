@@ -1,8 +1,8 @@
 <!-- Équipe Santé+ - Service Detail: Prise de Tension Artérielle -->
-<div class="esp-service-detail">
-  
+<div class="esp-service-detail" lang="fr-CA">
+
   <!-- Hero Section -->
-  <section class="esp-hero">
+  <section class="esp-hero" itemscope itemtype="https://schema.org/MedicalProcedure">
     <div class="esp-hero-content">
       <div class="esp-hero-badge">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@
             <path d="M7 4L14 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="tel:+14505551234" class="esp-btn-secondary">
+        <a href="tel:+15799579690" class="esp-btn-secondary">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18 14V17C18 17.5523 17.5523 18 17 18C8.71573 18 2 11.2843 2 3C2 2.44772 2.44772 2 3 2H6C6.55228 2 7 2.44772 7 3C7 4.25 7.2 5.45 7.57 6.57C7.66 6.85 7.59 7.16 7.38 7.38L5.5 9.25C6.93 12.11 9.39 14.57 12.25 16L14.12 14.12C14.34 13.91 14.65 13.84 14.93 13.93C16.05 14.3 17.25 14.5 18.5 14.5C19.0523 14.5 19.5 14.9477 19.5 15.5V17C19.5 17.5523 19.0523 18 18.5 18H18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -492,7 +492,7 @@
           <a href="https://equipesanteplus.ca/contact/" class="esp-btn-cta-primary">
             <span>Prendre rendez-vous</span>
           </a>
-          <a href="tel:+14505551234" class="esp-btn-cta-secondary">
+          <a href="tel:+15799579690" class="esp-btn-cta-secondary">
             Appeler pour information
           </a>
         </div>
@@ -529,6 +529,50 @@
       </div>
     </div>
   </section>
+
+  <!-- Schema.org JSON-LD : MedicalProcedure + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalProcedure",
+        "name": "Prise de tension artérielle à domicile",
+        "alternateName": ["Mesure de la pression artérielle", "Suivi hypertension à domicile"],
+        "description": "Mesure professionnelle de la tension artérielle et des signes vitaux (pouls, SpO2, fréquence respiratoire) à domicile par une infirmière. Suivi de l'hypertension et enseignement personnalisé sur la Rive-Sud de Montréal.",
+        "procedureType": "https://schema.org/DiagnosticProcedure",
+        "howPerformed": "Mesure avec brassard validé Hypertension Canada, position assise, dos appuyé, après 5 minutes de repos. Mesures répétées avec interprétation et enseignement.",
+        "preparation": "Éviter caféine, tabac et exercice 30 minutes avant. Vider la vessie. Se reposer 5 minutes assis avant la mesure.",
+        "url": "https://equipesanteplus.ca/soins-infirmier/prise-ta/",
+        "inLanguage": "fr-CA",
+        "provider": {
+          "@type": "MedicalBusiness",
+          "name": "Équipe Santé+",
+          "telephone": "+1-579-957-9690",
+          "url": "https://equipesanteplus.ca/",
+          "areaServed": ["Longueuil", "Brossard", "Saint-Hubert", "Boucherville", "Saint-Lambert", "Greenfield Park", "Rive-Sud de Montréal", "Montérégie"]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "À quelle fréquence mesurer ma tension?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Hypertension non contrôlée: quotidiennement ou plusieurs fois/semaine. Hypertension contrôlée: hebdomadaire ou selon votre médecin. Avant chaque visite médicale: 7 jours de mesures matin/soir."}},
+          {"@type": "Question", "name": "Ma tension varie beaucoup, est-ce normal?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Oui. La TA varie naturellement durant la journée (plus basse la nuit, plus haute le matin). Stress, exercice, caféine et douleur l'augmentent temporairement. C'est la moyenne sur plusieurs mesures qui compte."}},
+          {"@type": "Question", "name": "Tension élevée au bureau mais normale à domicile?",
+           "acceptedAnswer": {"@type": "Answer", "text": "« Hypertension blouse blanche » : le stress de l'environnement médical élève la TA. C'est pourquoi l'automesure à domicile est importante. Votre médecin peut prescrire un monitoring 24h (MAPA) en cas de doute."}},
+          {"@type": "Question", "name": "Puis-je arrêter mes médicaments si ma TA est normale?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Non, jamais sans consulter votre médecin. La TA est normale grâce aux médicaments. Arrêter brutalement peut causer un rebond hypertensif dangereux. Tout ajustement se fait avec supervision médicale."}},
+          {"@type": "Question", "name": "Mon appareil à domicile est-il fiable?",
+           "acceptedAnswer": {"@type": "Answer", "text": "S'il est validé par Hypertension Canada et correctement utilisé, oui. Apportez-le lors de la visite : nous comparerons avec notre appareil professionnel et vérifierons votre technique."}},
+          {"@type": "Question", "name": "Quand consulter en urgence?",
+           "acceptedAnswer": {"@type": "Answer", "text": "TA ≥180/110 mmHg AVEC symptômes (maux de tête sévères, vision floue, douleur thoracique, essoufflement, confusion) = 911. TA élevée SANS symptômes = appeler le médecin le jour même."}}
+        ]
+      }
+    ]
+  }
+  </script>
 
 </div>
 
