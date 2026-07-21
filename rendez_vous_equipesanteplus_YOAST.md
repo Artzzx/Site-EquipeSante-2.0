@@ -1,7 +1,9 @@
-# Yoast SEO — Page Rendez-vous
+# Yoast SEO — Page Rendez-vous (téléphone uniquement)
 **URL de la page :** https://equipesanteplus.ca/rendez-vous/
 **Langue :** fr-CA
-**Date :** 2026-03-06
+**Date :** 2026-07-21
+
+> ⚠️ **Changement de politique** : la réservation en ligne (iframe Medexa) a été retirée. Tous les rendez-vous se prennent désormais uniquement par téléphone au **(579) 957-9690**. Yoast doit être mis à jour en conséquence — les anciens champs contenaient des mentions « réservation en ligne » qui ne sont plus vraies.
 
 ---
 
@@ -14,13 +16,13 @@
 | **Keyphrase cible** | rendez-vous infirmière à domicile longueuil |
 | **Titre SEO** | Rendez-vous Infirmière à Domicile – Rive-Sud \| Équipe Santé+ |
 | **Slug (permalien)** | rendez-vous |
-| **Méta description** | Réservez votre soin infirmier à domicile en ligne. Disponibilités en temps réel, confirmation immédiate. Service à Longueuil, Brossard, Saint-Hubert et toute la Rive-Sud. 7j/7. |
+| **Méta description** | Prenez rendez-vous avec une infirmière à domicile sur la Rive-Sud en un appel. Composez le 579-957-9690 : évaluation personnalisée, service bilingue à Longueuil, Brossard et Saint-Hubert. |
 
 **Aperçu Google attendu :**
 ```
 Rendez-vous Infirmière à Domicile – Rive-Sud | Équipe Santé+
 https://equipesanteplus.ca/rendez-vous/
-Réservez votre soin infirmier à domicile en ligne. Disponibilités en temps réel, confirmation immédiate. Service à Longueuil, Brossard, Saint-Hubert et toute la Rive-Sud. 7j/7.
+Prenez rendez-vous avec une infirmière à domicile sur la Rive-Sud en un appel. Composez le 579-957-9690 : évaluation personnalisée, service bilingue à Longueuil, Brossard et Saint-Hubert.
 ```
 
 ---
@@ -30,16 +32,16 @@ Réservez votre soin infirmier à domicile en ligne. Disponibilités en temps r�
 | Indicateur Yoast | Statut attendu | Action si rouge |
 |---|---|---|
 | Keyphrase dans le titre SEO | 🟢 Vert | "Rendez-vous Infirmière à Domicile" présent |
-| Keyphrase dans la méta description | 🟢 Vert | "soin infirmier à domicile" présent |
-| Keyphrase dans le H1 | 🟡 Orange | H1 = "Prenez rendez-vous en ligne" — ajouter "infirmière" si possible |
+| Keyphrase dans la méta description | 🟢 Vert | "infirmière à domicile" et "Longueuil" présents |
+| Keyphrase dans le H1 | 🟡 Orange | H1 = "Prenez rendez-vous par téléphone" — le mot "infirmière" est dans le sous-titre |
 | Keyphrase dans l'introduction | 🟢 Vert | Sous-titre contient "soin infirmier à domicile" |
-| Densité de keyphrase (0.5–3%) | 🟢 Vert | Keyphrase bien présente dans les étapes et FAQ |
-| Longueur du texte (>900 mots) | 🟢 Vert | Page avec étapes, avantages et FAQ détaillés |
-| Liens internes | 🟢 Vert | 3 liens internes ajoutés (Prix, FAQ, Contact) |
-| Liens sortants | 🟢 Vert | Lien vers la plateforme Medexa (externe) + tel présent |
-| Alt text images | 🟢 Vert | Aucune image — SVG décoratifs marqués aria-hidden |
+| Densité de keyphrase (0.5–3%) | 🟢 Vert | Keyphrase présente dans les étapes, avantages et FAQ |
+| Longueur du texte (>900 mots) | 🟢 Vert | Étapes + section téléphonique + avantages + FAQ |
+| Liens internes | 🟢 Vert | 4 liens internes (Prix, FAQ, Contact + lien courriel) |
+| Liens sortants | 🟢 Vert | Lien `tel:` et `mailto:` présents (l'iframe externe Medexa a été retirée) |
+| Alt text images | 🟢 Vert | Aucune image — SVG décoratifs marqués `aria-hidden` |
 
-> **Note** : Le schéma **ReserveAction** est en place. Cela permet potentiellement à Google d'afficher un bouton **"Réserver"** dans les fiches d'établissement et les Knowledge Panels.
+> **Note** : Le schéma `ReserveAction` a été **retiré** (il annonçait une réservation en ligne qui n'existe plus et pouvait générer des réclamations). Il est remplacé par `ContactPoint` avec heures d'ouverture — Google peut afficher un bouton « Appeler » dans le Knowledge Panel.
 
 ---
 
@@ -48,16 +50,16 @@ Réservez votre soin infirmier à domicile en ligne. Disponibilités en temps r�
 ### Facebook / Open Graph
 | Champ | Valeur à saisir |
 |---|---|
-| **Titre OG** | Prenez Rendez-vous avec une Infirmière à Domicile — Rive-Sud |
-| **Description OG** | Réservez en ligne en quelques clics. Disponibilités en temps réel, confirmation immédiate. Équipe Santé+ dessert Longueuil, Brossard, Saint-Hubert et toute la Rive-Sud, 7 jours sur 7. |
-| **Image OG** | Utiliser une photo de l'équipe ou de l'application — dimensions : **1200 × 630 px** |
+| **Titre OG** | Prendre rendez-vous — Infirmière à Domicile Rive-Sud |
+| **Description OG** | Appelez le 579-957-9690 pour planifier votre soin infirmier à domicile. Évaluation personnalisée par notre équipe. Service bilingue à Longueuil, Brossard, Saint-Hubert et toute la Rive-Sud. |
+| **Image OG** | Photo de l'équipe ou du logo — dimensions : **1200 × 630 px** |
 
 ### Twitter / X Card
 | Champ | Valeur à saisir |
 |---|---|
 | **Type de carte** | `summary_large_image` |
-| **Titre Twitter** | Rendez-vous Infirmière à Domicile — Rive-Sud |
-| **Description Twitter** | Réservez en ligne, disponibilités en temps réel. Service 7j/7 à Longueuil, Brossard, Saint-Hubert. |
+| **Titre Twitter** | Rendez-vous Infirmière — Rive-Sud |
+| **Description Twitter** | Appelez le 579-957-9690 pour prendre rendez-vous. Soins infirmiers à domicile à Longueuil, Brossard et sur la Rive-Sud. |
 | **Image Twitter** | Même image que OG (1200 × 630 px) |
 
 ---
@@ -67,9 +69,10 @@ Réservez votre soin infirmier à domicile en ligne. Disponibilités en temps r�
 | Propriété | Valeur |
 |---|---|
 | **Type principal** | `["MedicalBusiness", "LocalBusiness"]` |
-| **Action** | `ReserveAction` avec `EntryPoint` (URL de réservation) |
-| **Champs remplis** | name, description, url, telephone, potentialAction |
-| **Où dans le HTML** | Script JSON-LD en bas de page |
+| **Action** | ~~`ReserveAction`~~ **retirée** — remplacée par `ContactPoint` avec `hoursAvailable` |
+| **FAQ** | `FAQPage` avec 5 questions (dont « Puis-je réserver en ligne ? » qui clarifie que non) |
+| **Champs remplis** | name, description, url, telephone, email, areaServed, contactPoint (téléphone, langues, heures) |
+| **Où dans le HTML** | Script JSON-LD en bas de page + microdata FAQPage sur la section FAQ |
 
 ---
 
@@ -77,10 +80,10 @@ Réservez votre soin infirmier à domicile en ligne. Disponibilités en temps r�
 
 | # | Mot-clé secondaire | Intention |
 |---|---|---|
-| 1 | réservation infirmière brossard | transactionnelle |
-| 2 | booking infirmière rive-sud en ligne | transactionnelle |
-| 3 | prendre rendez-vous soins infirmiers | transactionnelle |
-| 4 | prise rendez-vous prélèvement sanguin domicile | transactionnelle / locale |
+| 1 | prendre rendez-vous infirmière rive-sud | transactionnelle |
+| 2 | téléphone infirmière à domicile longueuil | transactionnelle / locale |
+| 3 | rendez-vous soins infirmiers brossard | transactionnelle |
+| 4 | comment prendre rendez-vous infirmière domicile | informationnelle |
 
 ---
 
@@ -88,23 +91,27 @@ Réservez votre soin infirmier à domicile en ligne. Disponibilités en temps r�
 
 | Lien dans la page | Texte d'ancre | Page de destination |
 |---|---|---|
-| Lien dans le formulaire de réservation | (579) 957-9690 | tel:+15799579690 |
-| Lien ajouté en bas de page | Consulter nos tarifs | https://equipesanteplus.ca/prix/ |
-| Lien ajouté en bas de page | Lire la FAQ | https://equipesanteplus.ca/faq/ |
-| Lien ajouté en bas de page | Nous contacter | https://equipesanteplus.ca/contact/ |
+| Section téléphone (numéro affiché) | (579) 957-9690 | `tel:+15799579690` |
+| Section téléphone (alternative) | infos@equipesanteplus.ca | `mailto:infos@equipesanteplus.ca` |
+| Section téléphone (alternative) | page contact | https://equipesanteplus.ca/contact/ |
+| Pied de page | Consulter nos tarifs | https://equipesanteplus.ca/prix/ |
+| Pied de page | Lire la FAQ | https://equipesanteplus.ca/faq/ |
+| Pied de page | Nous contacter | https://equipesanteplus.ca/contact/ |
 
 ---
 
 ## 7. Checklist de déploiement final
 
 - [ ] HTML collé dans le widget Elementor et sauvegardé
-- [ ] Vérifier que l'iframe Medexa se charge correctement après déploiement
-- [ ] Keyphrase cible saisie dans Yoast : `rendez-vous infirmière à domicile longueuil`
-- [ ] Titre SEO saisi (vérifier compteur — max 60 car.)
-- [ ] Méta description saisie (vérifier compteur — 140 à 160 car.)
+- [ ] **Iframe Medexa retirée** — vérifier qu'aucun autre widget Elementor sur cette page ne charge encore l'iframe de réservation
+- [ ] **Compte Medexa / lien de réservation** : décider s'il faut désactiver l'accès public (formulaire orphelin) — hors du champ de cette page
+- [ ] Yoast : mettre à jour le titre SEO et la méta description (les anciennes valeurs mentionnaient « réservation en ligne » qui n'existe plus)
+- [ ] Yoast : supprimer toute mention `ReserveAction` dans l'onglet Schema si Yoast Premium a été configuré manuellement
 - [ ] Slug vérifié : `/rendez-vous/`
 - [ ] Image OG uploadée dans l'onglet Réseaux sociaux de Yoast
 - [ ] Keyphrases secondaires saisies
-- [ ] Page publiée et testée sur mobile (iframe doit être fonctionnel)
+- [ ] Page publiée et testée sur mobile — le numéro doit être cliquable (`tel:`)
+- [ ] Vérifier les autres pages qui liaient vers `/rendez-vous/` comme point de « réservation en ligne » (home, service pages, FAQ) et adapter les ancres si elles promettent « réserver en ligne »
 - [ ] URL soumise dans Google Search Console → "Demander l'indexation"
+- [ ] Test Rich Results Google : vérifier que le `FAQPage` et le `ContactPoint` sont valides et qu'aucune erreur `ReserveAction` ne subsiste
 - [ ] Résultat Yoast : minimum 4 feux verts sur 5 indicateurs principaux
