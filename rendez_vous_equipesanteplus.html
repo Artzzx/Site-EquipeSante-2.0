@@ -1,6 +1,6 @@
-<!-- SCHEMA CHOISI : MedicalBusiness + ReserveAction + LocalBusiness
-     RAISON : Page de prise de rendez-vous en ligne avec iframe de réservation — ReserveAction permet à Google d'afficher le bouton "Réserver" directement dans les résultats
-     SOURCE : https://schema.org/ReserveAction -->
+<!-- SCHEMA CHOISI : MedicalBusiness + LocalBusiness + ContactPoint
+     RAISON : Les rendez-vous se prennent uniquement par téléphone. ContactPoint expose le numéro à Google pour l'afficher dans le Knowledge Panel et permettre l'action "Appeler".
+     SOURCE : https://schema.org/ContactPoint -->
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -239,7 +239,7 @@
         }
 
         /* ============================================
-           BOOKING IFRAME SECTION
+           PHONE BOOKING SECTION
         ============================================ */
         .booking-section {
             background: #F8F3EA;
@@ -247,72 +247,98 @@
         }
 
         .booking-container {
-            max-width: 1100px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        .booking-wrapper {
+        .phone-card {
             background: #ffffff;
             border-radius: 20px;
-            padding: 32px;
+            padding: 48px 32px;
             box-shadow: 0 8px 32px rgba(68, 106, 59, 0.12);
-            border: 2px solid rgba(219, 149, 152, 0.2);
+            border: 2px solid rgba(219, 149, 152, 0.25);
+            text-align: center;
         }
 
-        .booking-iframe-container {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            border-radius: 12px;
-        }
-
-        .booking-iframe-container iframe {
-            width: 100%;
-            height: 800px;
-            border: none;
-            display: block;
-        }
-
-        .booking-notice {
+        .phone-card .phone-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 24px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #DB9598, #c77f83);
+            color: #ffffff;
             display: flex;
-            gap: 14px;
-            align-items: flex-start;
-            background: rgba(219, 149, 152, 0.1);
-            border: 1px solid rgba(219, 149, 152, 0.4);
-            border-radius: 12px;
-            padding: 18px 22px;
-            margin-bottom: 24px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 18px rgba(219, 149, 152, 0.35);
         }
 
-        .booking-notice svg {
-            flex-shrink: 0;
-            color: #DB9598;
-            margin-top: 2px;
+        .phone-card h3 {
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(24px, 3vw, 32px);
+            color: #446A3B;
+            margin: 0 0 12px;
+            font-weight: 400;
         }
 
-        .booking-notice p {
-            font-size: 15px;
+        .phone-card p.phone-lead {
+            font-size: 17px;
             line-height: 1.6;
             color: #446A3B;
-            margin: 0;
+            opacity: 0.92;
+            margin: 0 auto 28px;
+            max-width: 640px;
         }
 
-        .booking-notice strong {
-            font-weight: 600;
+        .phone-number-display {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 20px 36px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #446A3B 0%, #365330 100%);
+            color: #F8F3EA;
+            font-family: 'LostaMasta', 'DM Sans', sans-serif;
+            font-size: clamp(28px, 4vw, 38px);
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            box-shadow: 0 8px 24px rgba(68, 106, 59, 0.28);
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
         }
 
-        /* Loading state */
-        .iframe-loading {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+        .phone-number-display:hover,
+        .phone-number-display:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(68, 106, 59, 0.38);
+        }
+
+        .phone-hours {
+            font-size: 15px;
             color: #446A3B;
+            opacity: 0.85;
+            margin: 0 auto 24px;
         }
 
-        .iframe-loading.hidden {
-            display: none;
+        .phone-alt {
+            font-size: 14px;
+            color: #446A3B;
+            opacity: 0.8;
+            border-top: 1px solid rgba(68, 106, 59, 0.12);
+            padding-top: 20px;
+            margin-top: 8px;
+        }
+
+        .phone-alt a {
+            color: #DB9598;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .phone-alt a:hover {
+            text-decoration: underline;
         }
 
         /* ============================================
@@ -528,12 +554,8 @@
                 padding: 60px 0;
             }
 
-            .booking-wrapper {
-                padding: 24px;
-            }
-
-            .booking-iframe-container iframe {
-                height: 600px;
+            .phone-card {
+                padding: 36px 20px;
             }
 
             .step-item,
@@ -553,13 +575,14 @@
         }
 
         @media (max-width: 480px) {
-            .booking-wrapper {
-                padding: 16px;
-                border-radius: 12px;
+            .phone-card {
+                padding: 28px 16px;
+                border-radius: 14px;
             }
 
-            .booking-iframe-container iframe {
-                height: 500px;
+            .phone-number-display {
+                padding: 16px 22px;
+                font-size: 26px;
             }
         }
 
@@ -598,34 +621,34 @@
             <div class="hero-content">
                 <div class="hero-badge">
                     <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17 3H3C1.89543 3 1 3.89543 1 5V15C1 16.1046 1.89543 17 3 17H17C18.1046 17 19 16.1046 19 15V5C19 3.89543 18.1046 3 17 3Z" stroke="currentColor" stroke-width="1.5"/>
-                        <path d="M1 7H19M5 11H7M5 14H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M18 14v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 1.12 3.18 2 2 0 0 1 3.11 1h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 18 14z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    Réservation en ligne sécurisée
+                    Réservation par téléphone
                 </div>
-                <h1>Prenez rendez-vous en ligne</h1>
+                <h1>Prenez rendez-vous par téléphone</h1>
                 <p class="hero-subtitle">
-                    Réservez votre soin infirmier à domicile en quelques clics. Choisissez le service, 
-                    la date et l'heure qui vous conviennent. Simple, rapide et sécurisé.
+                    Chaque demande de soin infirmier à domicile passe par un appel avec notre équipe.
+                    Cela nous permet d'évaluer vos besoins, de répondre à vos questions et de choisir
+                    ensemble le moment qui vous convient le mieux sur la Rive-Sud.
                 </p>
                 <div class="hero-features">
                     <div class="feature-item">
                         <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <span>Disponibilités en temps réel</span>
+                        <span>Évaluation personnalisée</span>
                     </div>
                     <div class="feature-item">
                         <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <span>Confirmation immédiate</span>
+                        <span>Réponse humaine</span>
                     </div>
                     <div class="feature-item">
                         <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 12L8 17L21 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <span>Plateforme sécurisée</span>
+                        <span>Service bilingue FR / EN</span>
                     </div>
                 </div>
             </div>
@@ -637,117 +660,120 @@
         <div class="container">
             <div class="section-header">
                 <h2>Comment ça fonctionne</h2>
-                <p>Un processus simple en 4 étapes pour réserver votre soin infirmier</p>
+                <p>Un processus simple en 4 étapes pour organiser votre soin infirmier à domicile</p>
             </div>
 
             <div class="steps-grid">
                 <div class="step-item">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Sélectionnez votre service</h3>
-                        <p>Choisissez le type de soin dont vous avez besoin parmi notre gamme complète de services infirmiers à domicile.</p>
+                        <h3>Appelez-nous</h3>
+                        <p>Composez le (579) 957-9690 durant nos heures d'ouverture. Un membre de l'équipe répond à chaque appel — pas de menu automatisé.</p>
                     </div>
                 </div>
 
                 <div class="step-item">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Choisissez date et heure</h3>
-                        <p>Consultez nos disponibilités en temps réel et sélectionnez le créneau qui vous convient le mieux.</p>
+                        <h3>Décrivez votre besoin</h3>
+                        <p>Expliquez brièvement le soin recherché et votre situation. Nous validons ensemble la faisabilité et les documents nécessaires (ordonnance, carte d'assurance, etc.).</p>
                     </div>
                 </div>
 
                 <div class="step-item">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Remplissez vos informations</h3>
-                        <p>Entrez vos coordonnées et toute information pertinente pour assurer un service personnalisé et sécuritaire.</p>
+                        <h3>Choisissez ensemble une date</h3>
+                        <p>Nous vous proposons les créneaux disponibles à votre adresse sur la Rive-Sud. Vous choisissez la date et l'heure qui vous conviennent le mieux.</p>
                     </div>
                 </div>
 
                 <div class="step-item">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h3>Confirmez votre rendez-vous</h3>
-                        <p>Recevez une confirmation immédiate par courriel avec tous les détails de votre rendez-vous.</p>
+                        <h3>Recevez votre confirmation</h3>
+                        <p>Vous recevez une confirmation par courriel ou par texto avec l'adresse, l'heure et les consignes de préparation, s'il y a lieu.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- BOOKING IFRAME SECTION -->
+    <!-- PHONE BOOKING SECTION -->
     <section class="booking-section">
         <div class="container">
             <div class="booking-container">
                 <div class="section-header">
                     <h2>Réservez votre rendez-vous</h2>
-                    <p>Utilisez notre plateforme de réservation sécurisée ci-dessous</p>
+                    <p>Chaque soin infirmier étant unique, nous prenons vos rendez-vous uniquement par téléphone afin d'évaluer correctement vos besoins.</p>
                 </div>
 
-                <div class="booking-wrapper">
-                    <div class="booking-notice">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
-                            <path d="M10 7V10M10 13H10.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <div class="phone-card">
+                    <div class="phone-icon" aria-hidden="true">
+                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.11 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <p><strong>Certains services nécessitent une évaluation téléphonique préalable</strong> et ne peuvent pas être réservés directement en ligne. Si vous ne trouvez pas le service souhaité ci-dessous, veuillez nous contacter par téléphone au <a href="tel:+15799579690" style="color: #DB9598; text-decoration: none; font-weight: 500;">(579) 957-9690</a> afin qu'un membre de notre équipe puisse vous orienter.</p>
                     </div>
-                    <div class="booking-iframe-container">
-                        <div class="iframe-loading" id="iframeLoading">
-                            <p>Chargement du système de réservation...</p>
-                        </div>
-                        <iframe 
-                            src="https://secure.medexa.com/onlineAppointmentInformation?APIKey=177F244AB18B426F900D7D4485BF8D54&flowColor=446a3b&backgroundColor=f8f3ea" 
-                            width="100%" 
-                            height="800" 
-                            frameborder="0"
-                            title="Système de prise de rendez-vous en ligne"
-                            onload="document.getElementById('iframeLoading').classList.add('hidden')"
-                        ></iframe>
-                    </div>
+
+                    <h3>Appelez-nous pour prendre rendez-vous</h3>
+                    <p class="phone-lead">Une infirmière ou un membre de notre équipe vous répond, évalue votre besoin et fixe une visite à domicile qui vous convient sur la Rive-Sud.</p>
+
+                    <a href="tel:+15799579690" class="phone-number-display" aria-label="Appeler Équipe Santé+ au 579-957-9690">
+                        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.11 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        (579) 957-9690
+                    </a>
+
+                    <p class="phone-hours">Lundi au vendredi : 8 h — 20 h · Samedi et dimanche : 9 h — 17 h</p>
+
+                    <p class="phone-alt">Impossible d'appeler maintenant ? Écrivez-nous à
+                        <a href="mailto:infos@equipesanteplus.ca">infos@equipesanteplus.ca</a>
+                        ou passez par la <a href="https://equipesanteplus.ca/contact/">page contact</a> —
+                        nous vous rappelons pour finaliser votre rendez-vous.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ADVANTAGES SECTION -->
+    <!-- WHY PHONE SECTION -->
     <section class="advantages-section">
         <div class="container">
             <div class="section-header">
-                <h2>Avantages de la réservation en ligne</h2>
+                <h2>Pourquoi prendre rendez-vous par téléphone</h2>
+                <p>Un simple appel nous permet d'offrir un service infirmier plus sécuritaire et mieux adapté à votre situation.</p>
             </div>
 
             <div class="advantages-grid">
                 <div class="advantage-card">
-                    <div class="advantage-icon">⚡</div>
+                    <div class="advantage-icon">🩺</div>
                     <div class="advantage-content">
-                        <h3>Réservation instantanée</h3>
-                        <p>Plus besoin d'attendre un rappel. Réservez immédiatement votre créneau disponible 24h/24, 7j/7.</p>
+                        <h3>Évaluation clinique</h3>
+                        <p>Nous validons que le soin demandé est approprié à votre situation, à vos antécédents et au matériel requis avant de vous déplacer.</p>
                     </div>
                 </div>
 
                 <div class="advantage-card">
-                    <div class="advantage-icon">📅</div>
+                    <div class="advantage-icon">📋</div>
                     <div class="advantage-content">
-                        <h3>Visibilité totale</h3>
-                        <p>Consultez toutes les plages horaires disponibles et choisissez celle qui convient le mieux à votre emploi du temps.</p>
+                        <h3>Documents et ordonnance</h3>
+                        <p>Nous vérifions avec vous les prérequis (ordonnance médicale, résultats, carte d'assurance) pour éviter tout report du rendez-vous.</p>
                     </div>
                 </div>
 
                 <div class="advantage-card">
-                    <div class="advantage-icon">🔔</div>
+                    <div class="advantage-icon">📍</div>
                     <div class="advantage-content">
-                        <h3>Rappels automatiques</h3>
-                        <p>Recevez des rappels par courriel avant votre rendez-vous pour ne jamais l'oublier.</p>
+                        <h3>Confirmation d'adresse</h3>
+                        <p>Nous confirmons votre adresse sur la Rive-Sud, l'accessibilité du domicile et le meilleur moment de la journée pour la visite.</p>
                     </div>
                 </div>
 
                 <div class="advantage-card">
-                    <div class="advantage-icon">🔄</div>
+                    <div class="advantage-icon">💬</div>
                     <div class="advantage-content">
-                        <h3>Gestion simplifiée</h3>
-                        <p>Modifiez ou annulez votre rendez-vous facilement en ligne si nécessaire.</p>
+                        <h3>Réponses en direct</h3>
+                        <p>Vos questions sur le déroulement, la durée et le coût du soin obtiennent une réponse claire, sans attente, directement au téléphone.</p>
                     </div>
                 </div>
             </div>
@@ -755,31 +781,46 @@
     </section>
 
     <!-- FAQ SECTION -->
-    <section class="faq-section">
+    <section class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
         <div class="container">
             <div class="section-header">
                 <h2>Questions sur la prise de rendez-vous</h2>
             </div>
 
             <div class="faq-grid">
-                <div class="faq-item">
-                    <h3 class="faq-question">Est-ce que je reçois une confirmation ?</h3>
-                    <p class="faq-answer">Oui, vous recevrez immédiatement une confirmation par courriel avec tous les détails de votre rendez-vous et les instructions pour vous préparer.</p>
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">Puis-je réserver en ligne ?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="faq-answer" itemprop="text">Non. Tous nos rendez-vous se prennent par téléphone au (579) 957-9690. Cette étape nous permet d'évaluer votre besoin, de vérifier les prérequis (ordonnance, assurances) et de confirmer que le soin peut être réalisé chez vous en toute sécurité.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item">
-                    <h3 class="faq-question">Puis-je modifier mon rendez-vous ?</h3>
-                    <p class="faq-answer">Oui, vous pouvez modifier ou annuler votre rendez-vous en ligne ou en nous contactant directement. Nous demandons un préavis de 24 heures si possible.</p>
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">Est-ce que je reçois une confirmation ?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="faq-answer" itemprop="text">Oui. Après l'appel, vous recevez une confirmation par courriel ou par texto avec la date, l'heure, l'adresse et les instructions de préparation.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item">
-                    <h3 class="faq-question">Dois-je préparer quelque chose ?</h3>
-                    <p class="faq-answer">Selon le type de soin, vous pourriez avoir besoin d'une ordonnance médicale ou de documents spécifiques. Ces détails vous seront communiqués lors de la confirmation.</p>
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">Puis-je modifier ou annuler mon rendez-vous ?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="faq-answer" itemprop="text">Oui. Appelez-nous au (579) 957-9690 dès que possible. Nous demandons un préavis de 24 heures lorsque la situation le permet, afin de libérer le créneau pour d'autres patients.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item">
-                    <h3 class="faq-question">Et si je préfère appeler ?</h3>
-                    <p class="faq-answer">Aucun problème ! Vous pouvez également prendre rendez-vous par téléphone au (579) 957-9690. Notre équipe se fera un plaisir de vous aider.</p>
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">Dois-je préparer quelque chose avant l'appel ?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="faq-answer" itemprop="text">Ayez sous la main votre ordonnance médicale (s'il y a lieu), votre carte d'assurance, et l'adresse exacte où le soin sera réalisé. Cela accélère la prise de rendez-vous.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">Que faire si vous ne répondez pas ?</h3>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <p class="faq-answer" itemprop="text">Laissez un message vocal avec votre nom, votre numéro et le soin recherché — nous vous rappelons dans les meilleurs délais. Vous pouvez aussi nous écrire à infos@equipesanteplus.ca ou passer par la page contact.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -790,19 +831,31 @@
       "@context": "https://schema.org",
       "@type": ["MedicalBusiness", "LocalBusiness"],
       "name": "Équipe Santé+",
-      "description": "Prise de rendez-vous en ligne pour soins infirmiers à domicile",
+      "description": "Prise de rendez-vous par téléphone pour soins infirmiers à domicile sur la Rive-Sud de Montréal.",
       "url": "https://equipesanteplus.ca/rendez-vous/",
       "telephone": "+1-579-957-9690",
-      "potentialAction": {
-        "@type": "ReserveAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://equipesanteplus.ca/rendez-vous/",
-          "actionPlatform": [
-            "http://schema.org/DesktopWebPlatform",
-            "http://schema.org/MobileWebPlatform"
-          ]
-        }
-      }
+      "email": "infos@equipesanteplus.ca",
+      "areaServed": ["Longueuil", "Brossard", "Saint-Hubert", "Boucherville", "Saint-Lambert", "Greenfield Park", "Rive-Sud de Montréal", "Montérégie"],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+1-579-957-9690",
+        "contactType": "Réservation de rendez-vous",
+        "availableLanguage": ["French", "English"],
+        "areaServed": "CA-QC",
+        "hoursAvailable": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ]
+      }]
     }
     </script>
